@@ -106,12 +106,12 @@ Please read through our [contributing guidelines]( https://github.com/iluhcm/RED
 **Xing Li**
 
 - <https://github.com/iluhcm>
-- email:<sam.lxing@gmail.com>
+- email: <sam.lxing@gmail.com>
 
 **Di Wu**
 
 - <https://github.com/herbiguncle>
-- email:<wubupt@foxmail.com>
+- email: <wubupt@foxmail.com>
 
 ## Copyright and license
 
