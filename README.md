@@ -7,13 +7,13 @@ RED(RNA Editing events Detector) is a program to detect and visualize RNA editin
 3. Visualization of imported mapped raw data (bam/sam etc.) with genome scale and chromosome scale;
 4. Faster RNA editing detection speed with MySQL database;
 5. Eight RNA editing site’s filters to filter out the most possible spurious sites.
-- Basic Filter (contain quality filter and coverage filter);
-- Comprehensive Filter;
-- dbSNP Filter;
-- pvalue Filter;
-- Repeat Filter;
-- DNA RNA Filter;
-- LLRFilter;
+  - Basic Filter (contain quality filter and coverage filter);
+  - Comprehensive Filter;
+  - dbSNP Filter;
+  - pvalue Filter;
+  - Repeat Filter;
+  - DNA RNA Filter;
+  - LLRFilter;
 6. Visualization of editing sites with each step’s filter.
 
 To get started, check out <http://bellatangtang.github.io>!
@@ -107,12 +107,12 @@ Please read through our [contributing guidelines]( https://github.com/iluhcm/RED
 
 ## Creators
 
-** Xing Li**
+**Xing Li**
 
 - <https://github.com/iluhcm>
 - email:<sam.lxing@gmail.com>
 
-** Di Wu**
+**Di Wu**
 
 - <https://github.com/herbiguncle>
 - email:<wubupt@foxmail.com>
