@@ -40,10 +40,6 @@ Two quick start options for our software are available:
 - [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.2.0.zip).
 - Clone the repo: `git clone https://github.com/bellatangtang/bellatangtang.github.io.git`.
 
-
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
-- Install with [Bower](http://bower.io): `bower install bootstrap`.
-
 ### What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
