@@ -1,302 +1,133 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
- "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+﻿<!DOCTYPE HTML>
+<html lang="zh-cn">
   <head>
-    <meta name="Generator" content="FreshHTML v3.70"></meta>
+    <title>RED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Optional Bootstrap Theme -->
+    <link href="data:text/css;charset=utf-8," data-href="http://cdn.bootcss.com/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/favicon.ico">
+    <style type="text/css">
+    /* Custom Styles */
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+    </style>
   </head>
+  
   <body>
-    &lt;!DOCTYPE HTML&gt;<br>&lt;html lang="zh-cn"&gt;<br>&nbsp; &lt;head&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;title&gt;RED&lt;/title&gt;<br>&nbsp;&nbsp;&nbsp; &lt;meta name="viewport" content="width=device-width,
-    initial-scale=1.0"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;meta http-equiv="X-UA-Compatible"
-    content="IE=edge"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;!-- Bootstrap --&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;link rel="stylesheet" href="<a href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css</a>"&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;link rel="stylesheet" href="<a href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css</a>"&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;script src="<a href="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script">http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"&gt;&lt;/script</a>&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;script src="<a href="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script">http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"&gt;&lt;/script</a>&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;!-- Optional Bootstrap Theme --&gt;<br>&nbsp;&nbsp;&nbsp; &lt;link href="data:text/css;charset=utf-8,"
-    data-href="<a href="http://cdn.bootcss.com/bootstrap/css/bootstrap-theme.min.css">http://cdn.bootcss.com/bootstrap/css/bootstrap-theme.min.css</a>"
-    rel="stylesheet" id="bs-theme-stylesheet"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;!-- Favicons
-    --&gt;<br>&nbsp;&nbsp;&nbsp; &lt;link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;link rel="icon" href="/favicon.ico"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;script src="<a href="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script">https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script</a>&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;style type="text/css"&gt;<br>&nbsp;&nbsp;&nbsp; /* Custom Styles */<br>&nbsp;&nbsp;&nbsp;
-    ul.nav-tabs.affix{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; top: 30px; /* Set
-    the top position of pinned element */<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    width:170px;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; p,ul{<br>&nbsp;&nbsp;&nbsp;
-    font-family: Times New Roman;<br>&nbsp;&nbsp;&nbsp; font-size: 18px;<br>&nbsp;&nbsp;&nbsp;
-    }<br>&nbsp;&nbsp;&nbsp; &lt;/style&gt;<br>&nbsp; &lt;/head&gt;<br>&nbsp; <br>&nbsp;
-    &lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- &#x9875&#x9762&#x9876&#x7AEF
-    --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="navbar navbar-inverse "
-    role="navigation"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="container"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="navbar-header"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-    data-target=".navbar-collapse"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;span class="icon-bar"&gt;&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;span class="icon-bar"&gt;&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;span class="icon-bar"&gt;&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/button&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a
-    class="navbar-brand" href=""&gt;RNA Editing Detector&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp; &lt;div
-    class="container"&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;!-- &#x9879&#x76EE&#x63CF&#x8FF0 --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div
-    class="jumbotron"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div
-    class="container"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h1&gt;RNA Editing Detector&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;describe the project describe the project describe the project describe
-    the project describe the project describe the project describe the project describe
-    the project describe the project describe the project&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;&lt;a class="btn btn-lg btn-success" href="<a href="http://baidu.com">http://baidu.com</a>"
-    role="button"&gt;Download&lt;/a&gt;&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;
-    <br>&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- &#x5206&#x680F --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="row"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- &#x5206&#x680F
-    &#x7D22&#x5F15&#x5217&#x8868 --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="col-md-2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-group" id="accordion"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel panel-default"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-heading"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h4 class="panel-title"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"&gt;1&nbsp;Introduction&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div id="collapseOne" class="panel-collapse collapse in"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-body"&gt;&lt;a href="#section1.1"&gt;1.1 What is RED&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-body"&gt;&lt;a href="#section1.2"&gt;1.2 Prerequisites&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-body"&gt;&lt;a href="#section1.3"&gt;1.3 Installation&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-body"&gt;&lt;a href="#section1.4"&gt;1.4 Terminology&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel panel-default"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-heading"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h4 class="panel-title"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"&gt;2&nbsp;Getting
-    Started&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div id="collapseTwo" class="panel-collapse collapse"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-body"&gt;&lt;a href="#section2.1"&gt;2.1 Starting a New Project&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="panel-body"&gt;&lt;a href="#section2.2"&gt;2.2 Opening an Existing
-    Project&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- &#x5206&#x680F &#x5185&#x5BB9&#x4E3B&#x4F53
-    --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col-md-10"&nbsp;
-    style="padding-left: 40px;"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;div class="bs-docs-section"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;!-- &#x7B2C&#x4E00&#x7AE0 --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h1 id="chapter1" class="page-header"&gt;1 Introduction&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h2 id="section1.1"&gt;1.1 What is RED&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;RED (RNA Editing events Detector) is a program to detect and visualize
-    RNA editing events at genomic scale using next-generation sequencing data. RNA editing
-    is one of the post- or co-transcriptional processes with modification of RNA nucleotides
-    from their genome-encoded sequence. In human, RNA editing event occurs mostly by
-    deamination of adenosine to inosine (A-to-I) conversion through ADAR enzymes {ref}.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;img src="<a href="https://github.com/Bellatangtang/Bellatangtang.github.io/img/pic.1.1.png">https://github.com/Bellatangtang/Bellatangtang.github.io/img/pic.1.1.png</a>"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;RED is a full Java-based program with graphic user interface (GUI), which
-    works on all series of systems, including Windows, Linux or Mac OS X. The software
-    intergrates various steps to filter spurisous variant sites. Formal statistical
-    test is carried out to identify reliable RNA editing sites. Potential RNA editing
-    sites are visualized in the context of reference gene. RED enables the analysis
-    of RNA editing events at two levels using VCF file from different sources and the
-    presentation of full mapped sequence data using BAM/SAM file:&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Detection of RNA editing sites by using RNA Variant Calling Format data
-    alone (i.e., De Novo identification)&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Detection of RNA editing events using both DNA and RNA Variant Calling
-    Format data&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h2 id="section1.2"&gt;1.2 Prerequisites&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Java Runtime Environment (jdk 1.7.0_21 or later)&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;MySQL Database (MySQL 5.6.19 or later)&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;R Environment (R 3.1.1 or later)&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h2 id="section1.3"&gt;1.3 Installation&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;1.3.1&nbsp;Install Java Runtime Environment&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;There are two ways to install JRE.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Download JDK: <a href="http://www.oracle.com/technetwork/java/index.html</li">http://www.oracle.com/technetwork/java/index.html&lt;/li</a>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Download JRE: <a href="http://www.java.com</li">http://www.java.com&lt;/li</a>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;1.3.2&nbsp;Install MySQL Database&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Download site: <a href="http://dev.mysql.com/downloads/mysql/</p">http://dev.mysql.com/downloads/mysql/&lt;/p</a>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Although default configuration can ensure your server work well, you can
-    edit your configure file to get better performance. Default path is /etc/my.cnf
-    in Linux system. You can use MySQL Workbench to configure your server efficiently
-    for Windows system.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;1.3.3&nbsp;Install R Environment&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Download site: <a href="http://www.r-project.org/</p">http://www.r-project.org/&lt;/p</a>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;You have to install package &ldquo;rJava&rdquo; in R which ensures connection
-    between R and Java. Open R Window and type:&lt;code&gt;install.packages(rJava)&lt;/code&gt;.The
-    package will be installed automatically if the device has been connected to the
-    Internet.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h2 id="section1.4"&gt;1.4 Terminology&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;There are a few terms used throughout the RED documentation which it is
-    useful to understand before using the program.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;1.4.1&nbsp;In Molecular Biology&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;RNA Editing&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;RNA editing one of the post- or co-transcriptional processes with modification
-    of RNA nucleotides from their genome-encoded sequence&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Reference Genome Database&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Reference genome database is a comprehensive, integrated, non-redundant,
-    well-annotated set of reference sequences including genomic, transcript, and protein.,
-    e.g., hg19&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Sequence Alignment Map (.bam/.sam) File&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;SAM format is a text format for storing sequence data in a series of tab
-    delimited ASCII columns, while BAM format stores the same data in a compressed,
-    indexed, binary form.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Variant Calling Format (.vcf) File&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;VCF is a text file format (most likely stored in a compressed manner) which
-    contains meta-information lines, a header line, and then data lines each containing
-    information about a position in the genome.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;1.4.2&nbsp;In Program&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Data Set&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A data set stores a set of data imported from a single file with an efficient
-    way to be handled and presented. For now, a data set usually refers to a BAM/SAM
-    file that contains RNA sequencing information, which we present to display screen.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Data Group&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A data group is to merge two or more data sets with same biological conditions
-    to make comparisons for some purposes (e.g., compare RNA editing sites between cancer
-    patient and non-cancer patient). A data group does not contain any real data, we
-    just aggregate data sets needed for research and save the results of comparison.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Data Store&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A data store may refers to either a data set or data group where it doesn&rsquo;t
-    matter which one you have. Most analyses and displays in RED mostly operate on data
-    stores and they work equally well with either data sets or data groups.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Probe&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A probe represents a potential editing site which contains its information
-    of coordinate and editing base for now. We will add more information of editing
-    sites to a probe with subsequent edition. &lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Probe Set&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A probe set stores all probes from initial vcf file, namely stores all
-    editing sites without using any filter. It is also the root of a pipeline tree when
-    executing any filter to the original probe set. The probe set is produced when a
-    vcf file has been input into database.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Probe List&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A probe list is a subset of your probe set. Probe lists are produced by
-    the various filters available within RED, which store the rest of editing sites
-    and filter out spurious sites. However, we can produce probe lists from another
-    probe list which had executed one or more filters.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;!-- &#x7B2C&#x4E8C&#x7AE0 --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h1 id="chapter2" class="page-header"&gt;2 Getting Started&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h2 id="section2.1"&gt;2.1 Starting a New Project&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;2.1.1&nbsp;Select a Genome&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;To start a new project, you may first select a new genome which you want
-    to research. When program is open, select File &gt; New Project&hellip; to select
-    a new genome. If there isn&rsquo;t any genome file in local host, a warning notification
-    will pop up as the following is showed and tell you what you should do.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;If you choose to download a new genome, press Import New button and find
-    out the new genome you need.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;After the download progress bar comes to the end, the following select
-    genome dialog will appear.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;It is noteworthy that it takes a little long time for the first time when
-    importing genome data into our software. We have a cache mechanism to make it faster
-    for the second time you reload the same genome. Once you have selected your genome
-    and it has been loaded you can move on to the next step.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;2.1.2&nbsp;Connecting to MySQL Database&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A simple database connection dialog will pop up when you select File &gt;
-    Connect to MySQL&hellip; as the following illustration:&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;After connection is successful, the program will detect whether the database
-    had imported data before and make a relevant notification to tell you the next step.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Nothing in Database&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;If there is nothing in database, the program will tell what you have prepared
-    for data import.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;There is a simple explanation for each importing file to help you locate
-    what data file should import when you select browse button.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;After all the paths have been selected, press Import button and wait for
-    a moment, all the data will be imported to your database.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Data Which Don&rsquo;t Meet Your Demand in Database&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;After database is connected using database connection panel, pic2.6 is
-    present by selecting File &gt; Import Data &gt; Database&hellip; and you can import
-    another data for further demand.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Data Which Meets Your Demand in Database&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;If data have been loaded into database, then you can perform RNA editing
-    filters for real editing sites.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;2.1.3&nbsp;Loading BAM/SAM File (both DNA and RNA; or RNA alone)&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;In order to make a full sight of all editing sites in genome scale, the
-    BAM/SAM file relevant to VCF file which has been imported to database is needed
-    and will be present in Chromosome Viewer. The program supports single end and paired
-    end reads, and unlike many other formats it is also able to describe reads which
-    map across splice junctions.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;The SAM/BAM format is well defined. We provide an option dialog to help
-    you import your BAM/SAM data so you don't need to specify much information. &lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Remove duplicate reads&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Removing duplicate reads (reads of the same length and sequence identity)
-    is a widely used practice to correct bias when analyzing NGS data. Tick if you want
-    to remove. We strongly recommend you remove them because it may influence the result
-    of coverage. &lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;li&gt;Min mapping quality&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Control the minimum mapping quality when importing data. You can choose
-    to filter some reads either when importing data or when executing basic filter througe
-    database based on their mapping quality scores. The quality score ranges from 0
-    to 255 (with higher scores being better), and if you set a filter value then only
-    mapped reads with a score above this value will be imported. Not all read mappers
-    will include a score value so depending on where the file you are importing came
-    from this option may have no effect.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;2.1.4&nbsp;Setting filters&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;At least six kinds of filters are intergrated into the software. Please
-    see below for more information. Before setting filters, database must be connected
-    successfully first. Original editing sites will be present as a root tree named
-    All Probes within Data Viewer. While one filter has been executed, a leaf connected
-    to this tree will be born associated with the rest editing sites.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;For example, at first, we have imported BJ22.RNA.chr8.snvs.vcf and BJ22.RNA.chr8.snvs.bam
-    file into database which has 9530 potential editing sites.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Then we execute the Basic Filter with that quality is larger than 20 and
-    coverage is larger than 6.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;After a few seconds of calculating, there are 712 editing sites remained
-    and a leaf will be produced within Data Viewer to describe and check what you have
-    filtered out as following illustration. At the same time, the Genome Viewer and
-    Chromosome Viewer will show the editing sites by different colour.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h3&gt;2.1.5&nbsp;Reports&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;For now, we only support exporting editing sites information in text format.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;h2 id="section2.2"&gt;2.2 Opening an Existing Project&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;To open an existing project select File &gt; Open Project from the main
-    menu. All RED project files use a .red file extension. The file menu also contains
-    a list of the five most recently opened projects which you can use to quickly re-open.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;A RED project stores all of the Data Set, Data Group, Probe Set and Probe
-    List information for your project. It also remembers which annotation and data tracks
-    were visible.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;Although it stores the name of the genome you were using it doesn't contain
-    the actual genome data. If you are using RED on a new machine it will therefore
-    automatically download and install the required genome when you open a project file.
-    If you want to use RED when not connected to a network you therefore need to ensure
-    that the correct genome has been installed on your machine before disconnecting
-    it from the internet. Once downloaded, genomes will be cached on your machine for
-    future use.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;p&gt;When opening a project RED checks to see if the project file is compatible
-    with the version of RED you are using. If you try to open a project file from a
-    newer version of RED on an older RED version you may get an error telling you you
-    need to upgrade to the newest version of RED. Newer versions of RED can always open
-    project files from older versions of the program.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &lt;!-- &#x5206&#x680F &#x5185&#x5BB9&#x4E3B&#x4F53&#x5B8C --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp; &lt;/div&gt; &nbsp;&nbsp;&nbsp; &lt;!-- jQuery (necessary
-    for Bootstrap's JavaScript plugins) --&gt;<br>&nbsp;&nbsp;&nbsp; &lt;script src="<a href="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script">http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"&gt;&lt;/script</a>&gt;<br>&nbsp;&nbsp;&nbsp;
-    &lt;!-- Include all compiled plugins (below), or include individual files as needed
-    --&gt;<br>&nbsp;&nbsp;&nbsp; &lt;script src="<a href="http://cdn.bootcss.com/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script">http://cdn.bootcss.com/twitter-bootstrap/3.2.0/js/bootstrap.min.js"&gt;&lt;/script</a>&gt;<br>&nbsp;&nbsp;&nbsp;
-    <br>&nbsp;&nbsp;&nbsp; &lt;!-- Analytics<br>==================================================
-    --&gt;<br>&nbsp;&nbsp;&nbsp; &lt;script type="text/javascript"&gt;<br>&nbsp;&nbsp;&nbsp;
-    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : "
-    http://");<br>&nbsp;&nbsp;&nbsp; document.write(unescape("%3Cscript src='" + _bdhmProtocol
-    + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));<br>&nbsp;&nbsp;&nbsp;
-    &lt;/script&gt;<br>&nbsp; &lt;/body&gt;<br>&lt;/html&gt;<br>
+      <!-- 页面顶端 -->
+      <div class="navbar navbar-inverse " role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+      </div>
+    </div>
+    
+    
+   <div class="container"> 
+      
+      <!-- 项目描述 -->
+      <div class="jumbotron">
+         <div class="container">
+           <h1>RNA Editing Detector</h1>
+           <p>describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project</p>
+           <p><a class="btn btn-lg btn-success" href="http://baidu.com" role="button">Download</a></p>
+         </div>
+       </div>
+    
+  
+      <!-- 分栏 -->
+      <div class="row">
+      <!-- 分栏 索引列表 -->
+        <div class="col-md-2">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li><a href="#content1">第一部分</a></li>
+                <li><a href="#content2">第二部分</a></li>
+                <li><a href="#content3">第三部分</a></li>
+                <li><a href="#content4">第四部分</a></li>
+                <li><a href="#content5">第五部分</a></li>
+            </ul>
+        </div>
+        <!-- 分栏 内容主体 -->
+        <div class="col-md-10">
+          <h1 id="content1" class="page-header">What is SeqMonk</h1>
+          <p class="lead">SeqMonk is a program for visualising and analysing large set of mapped genomic regions. It was desgined to work with data from high throughput sequencing technologies, but will work just as well with any set of mapped reads.</p>
+          <p class="lead">SeqMonk provides a genome browser which allows you to navigate quickly around an annotated genome and a data browser which puts your sequence reads in their appropriate genomic context. It also includes a set of tools to allow you to quantitate and filter your data so that you can find regions of interest in a systematic way.</p>
+          
+          <h1 id="content2" class="page-header">What is SeqMonk useful for?</h1>
+          <p class="lead">SeqMonk was designed to be as flexible as possible and should be useful in a wide variety of experimental designs. Types of experiment which are known to have been successfully analysed with SeqMonk are:</p>
+          
+          <h1 id="content3" class="page-header">What is SeqMonk not useful for?</h1>
+          <p class="lead">There are some types of experiment to which SeqMonk is not directly suited. These limitations stem from the fact that SeqMonk deals only in genomic locations - it does not record the sequence underlying each mapped read. This means it is not useful for SNP identification. In these types of experiments though we have pre-processed the data to segregate the WT and mutant sequences into separate datasets and then loaded these into SeqMonk for analysis.</p>
+          
+          <h1 id="content4" class="page-header">What is?</h1>
+          <p class="lead">There are some types of experiment to which SeqMonk is not directly suited. These limitations stem from the fact that SeqMonk deals only in genomic locations - it does not record the sequence underlying each mapped read. This means it is not useful for SNP identification. In these types of experiments though we have pre-processed the data to segregate the WT and mutant sequences into separate datasets and then loaded these into SeqMonk for analysis.</p>
+          
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- Analytics
+================================================== -->
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+    </script>
   </body>
 </html>
