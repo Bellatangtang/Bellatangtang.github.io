@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="zh-cn">
   <head>
     <title>RED</title>
@@ -14,46 +14,22 @@
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
     <link rel="icon" href="/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <style type="text/css">
     /* Custom Styles */
-    ul.nav-tabs{
-        width: 140px;
-        margin-top: 20px;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-    }
-    ul.nav-tabs li{
-        margin: 0;
-        border-top: 1px solid #ddd;
-    }
-    ul.nav-tabs li:first-child{
-        border-top: none;
-    }
-    ul.nav-tabs li a{
-        margin: 0;
-        padding: 8px 16px;
-        border-radius: 0;
-    }
-    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
-        color: #fff;
-        background: #0088cc;
-        border: 1px solid #0088cc;
-    }
-    ul.nav-tabs li:first-child a{
-        border-radius: 4px 4px 0 0;
-    }
-    ul.nav-tabs li:last-child a{
-        border-radius: 0 0 4px 4px;
-    }
     ul.nav-tabs.affix{
         top: 30px; /* Set the top position of pinned element */
+        width:170px;
+    }
+    p,ul{
+    font-family: Times New Roman;
+    font-size: 18px;
     }
     </style>
   </head>
   
   <body>
-      <!-- é¡µé¢é¡¶ç«¯ -->
+      <!-- Ò³Ãæ¶¥¶Ë -->
       <div class="navbar navbar-inverse " role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -63,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="">RNA Editing Detector</a>
         </div>
       </div>
     </div>
@@ -71,50 +47,164 @@
     
    <div class="container"> 
       
-      <!-- é¡¹ç›®æè¿° -->
+      <!-- ÏîÄ¿ÃèÊö -->
       <div class="jumbotron">
          <div class="container">
            <h1>RNA Editing Detector</h1>
-           <p>describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project</p>
+           <h3>describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project describe the project</h3>
            <p><a class="btn btn-lg btn-success" href="http://baidu.com" role="button">Download</a></p>
          </div>
        </div>
     
   
-      <!-- åˆ†æ  -->
+      <!-- ·ÖÀ¸ -->
       <div class="row">
-      <!-- åˆ†æ  ç´¢å¼•åˆ—è¡¨ -->
+      <!-- ·ÖÀ¸ Ë÷ÒýÁÐ±í -->
         <div class="col-md-2">
             <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
-                <li><a href="#content1">ç¬¬ä¸€éƒ¨åˆ†</a></li>
-                <li><a href="#content2">ç¬¬äºŒéƒ¨åˆ†</a></li>
-                <li><a href="#content3">ç¬¬ä¸‰éƒ¨åˆ†</a></li>
-                <li><a href="#content4">ç¬¬å››éƒ¨åˆ†</a></li>
-                <li><a href="#content5">ç¬¬äº”éƒ¨åˆ†</a></li>
+               <div class="panel-group" id="accordion">
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1	Introduction</a>
+                       </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body"><a href="#section1.1">1.1 What is RED</a></div>
+                      <div class="panel-body"><a href="#section1.2">1.2 Prerequisites</a></div>
+                      <div class="panel-body"><a href="#section1.3">1.3 Installation</a></div>
+                      <div class="panel-body"><a href="#section1.4">1.4 Terminology</a></div>
+                    </div>
+                 </div>
+                 
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h4 class="panel-title">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2	Getting Started</a>
+                       </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                       <div class="panel-body"><a href="#section2.1">2.1 Starting a New Project</a></div>
+                      <div class="panel-body"><a href="#section2.2">2.2 Opening an Existing Project</a></div>
+                    </div>
+                 </div>
+                 
+                 
+              </div>
             </ul>
         </div>
-        <!-- åˆ†æ  å†…å®¹ä¸»ä½“ -->
-        <div class="col-md-10">
-          <h1 id="content1" class="page-header">What is SeqMonk</h1>
-          <p class="lead">SeqMonk is a program for visualising and analysing large set of mapped genomic regions. It was desgined to work with data from high throughput sequencing technologies, but will work just as well with any set of mapped reads.</p>
-          <p class="lead">SeqMonk provides a genome browser which allows you to navigate quickly around an annotated genome and a data browser which puts your sequence reads in their appropriate genomic context. It also includes a set of tools to allow you to quantitate and filter your data so that you can find regions of interest in a systematic way.</p>
-          
-          <h1 id="content2" class="page-header">What is SeqMonk useful for?</h1>
-          <p class="lead">SeqMonk was designed to be as flexible as possible and should be useful in a wide variety of experimental designs. Types of experiment which are known to have been successfully analysed with SeqMonk are:</p>
-          
-          <h1 id="content3" class="page-header">What is SeqMonk not useful for?</h1>
-          <p class="lead">There are some types of experiment to which SeqMonk is not directly suited. These limitations stem from the fact that SeqMonk deals only in genomic locations - it does not record the sequence underlying each mapped read. This means it is not useful for SNP identification. In these types of experiments though we have pre-processed the data to segregate the WT and mutant sequences into separate datasets and then loaded these into SeqMonk for analysis.</p>
-          
-          <h1 id="content4" class="page-header">What is?</h1>
-          <p class="lead">There are some types of experiment to which SeqMonk is not directly suited. These limitations stem from the fact that SeqMonk deals only in genomic locations - it does not record the sequence underlying each mapped read. This means it is not useful for SNP identification. In these types of experiments though we have pre-processed the data to segregate the WT and mutant sequences into separate datasets and then loaded these into SeqMonk for analysis.</p>
-          
-          </div>
+        
+        <!-- ·ÖÀ¸ ÄÚÈÝÖ÷Ìå -->
+        <div class="col-md-10"  style="padding-left: 40px;">
+           <div class="bs-docs-section">
+              <!-- µÚÒ»ÕÂ -->
+              <h1 id="chapter1" class="page-header">1 Introduction</h1>
+              <h2 id="section1.1">1.1 What is RED</h2>
+              <p>RED (RNA Editing events Detector) is a program to detect and visualize RNA editing events at genomic scale using next-generation sequencing data. RNA editing is one of the post- or co-transcriptional processes with modification of RNA nucleotides from their genome-encoded sequence. In human, RNA editing event occurs mostly by deamination of adenosine to inosine (A-to-I) conversion through ADAR enzymes {ref}.</p>
+              <img src="https://github.com/Bellatangtang/Bellatangtang.github.io/img/pic.1.1.png">
+              <p>RED is a full Java-based program with graphic user interface (GUI), which works on all series of systems, including Windows, Linux or Mac OS X. The software intergrates various steps to filter spurisous variant sites. Formal statistical test is carried out to identify reliable RNA editing sites. Potential RNA editing sites are visualized in the context of reference gene. RED enables the analysis of RNA editing events at two levels using VCF file from different sources and the presentation of full mapped sequence data using BAM/SAM file:</p>
+              <ul>
+              <li>Detection of RNA editing sites by using RNA Variant Calling Format data alone (i.e., De Novo identification)</li>
+              <li>Detection of RNA editing events using both DNA and RNA Variant Calling Format data</li>
+              </ul>
+              <h2 id="section1.2">1.2 Prerequisites</h2>
+              <ul>
+              <li>Java Runtime Environment (jdk 1.7.0_21 or later)</li>
+              <li>MySQL Database (MySQL 5.6.19 or later)</li>
+              <li>R Environment (R 3.1.1 or later)</li>
+              </ul>
+              <h2 id="section1.3">1.3 Installation</h2>
+              <h3>1.3.1	Install Java Runtime Environment</h3>
+              <p>There are two ways to install JRE.</p>
+              <ul>
+              <li>Download JDK: http://www.oracle.com/technetwork/java/index.html</li>
+              <li>Download JRE: http://www.java.com</li>
+              </ul>
+              <h3>1.3.2	Install MySQL Database</h3>
+              <p>Download site: http://dev.mysql.com/downloads/mysql/</p>
+              <p>Although default configuration can ensure your server work well, you can edit your configure file to get better performance. Default path is /etc/my.cnf in Linux system. You can use MySQL Workbench to configure your server efficiently for Windows system.</p>
+              <h3>1.3.3	Install R Environment</h3>
+              <p>Download site: http://www.r-project.org/</p>
+              <p>You have to install package ¡°rJava¡± in R which ensures connection between R and Java. Open R Window and type:<code>install.packages(rJava)</code>.The package will be installed automatically if the device has been connected to the Internet.</p>
+              <h2 id="section1.4">1.4 Terminology</h2>
+              <p>There are a few terms used throughout the RED documentation which it is useful to understand before using the program.</p>
+              <h3>1.4.1	In Molecular Biology</h3>
+              <ul>
+              <li>RNA Editing</li>
+              <p>RNA editing one of the post- or co-transcriptional processes with modification of RNA nucleotides from their genome-encoded sequence</p>
+              <li>Reference Genome Database</li>
+              <p>Reference genome database is a comprehensive, integrated, non-redundant, well-annotated set of reference sequences including genomic, transcript, and protein., e.g., hg19</p>
+              <li>Sequence Alignment Map (.bam/.sam) File</li>
+              <p>SAM format is a text format for storing sequence data in a series of tab delimited ASCII columns, while BAM format stores the same data in a compressed, indexed, binary form.</p>
+              <li>Variant Calling Format (.vcf) File</li>
+              <p>VCF is a text file format (most likely stored in a compressed manner) which contains meta-information lines, a header line, and then data lines each containing information about a position in the genome.</p>
+              </ul>
+              <h3>1.4.2	In Program</h3>
+              <ul>
+              <li>Data Set</li>
+              <p>A data set stores a set of data imported from a single file with an efficient way to be handled and presented. For now, a data set usually refers to a BAM/SAM file that contains RNA sequencing information, which we present to display screen.</p>
+              <li>Data Group</li>
+              <p>A data group is to merge two or more data sets with same biological conditions to make comparisons for some purposes (e.g., compare RNA editing sites between cancer patient and non-cancer patient). A data group does not contain any real data, we just aggregate data sets needed for research and save the results of comparison.</p>
+              <li>Data Store</li>
+              <p>A data store may refers to either a data set or data group where it doesn¡¯t matter which one you have. Most analyses and displays in RED mostly operate on data stores and they work equally well with either data sets or data groups.</p>
+              <li>Probe</li>
+              <p>A probe represents a potential editing site which contains its information of coordinate and editing base for now. We will add more information of editing sites to a probe with subsequent edition. </p>
+              <li>Probe Set</li>
+              <p>A probe set stores all probes from initial vcf file, namely stores all editing sites without using any filter. It is also the root of a pipeline tree when executing any filter to the original probe set. The probe set is produced when a vcf file has been input into database.</p>
+              <li>Probe List</li>
+              <p>A probe list is a subset of your probe set. Probe lists are produced by the various filters available within RED, which store the rest of editing sites and filter out spurious sites. However, we can produce probe lists from another probe list which had executed one or more filters.</p>
+              </ul>
+              <!-- µÚ¶þÕÂ -->
+              <h1 id="chapter2" class="page-header">2 Getting Started</h1>
+              <h2 id="section2.1">2.1 Starting a New Project</h2>
+              <h3>2.1.1	Select a Genome</h3>
+              <p>To start a new project, you may first select a new genome which you want to research. When program is open, select File > New Project¡­ to select a new genome. If there isn¡¯t any genome file in local host, a warning notification will pop up as the following is showed and tell you what you should do.</p>
+              <p>If you choose to download a new genome, press Import New button and find out the new genome you need.</p>
+              <p>After the download progress bar comes to the end, the following select genome dialog will appear.</p>
+              <p>It is noteworthy that it takes a little long time for the first time when importing genome data into our software. We have a cache mechanism to make it faster for the second time you reload the same genome. Once you have selected your genome and it has been loaded you can move on to the next step.</p>
+              <h3>2.1.2	Connecting to MySQL Database</h3>
+              <p>A simple database connection dialog will pop up when you select File > Connect to MySQL¡­ as the following illustration:</p>
+              <p>After connection is successful, the program will detect whether the database had imported data before and make a relevant notification to tell you the next step.</p>
+              <ul>
+              <li>Nothing in Database</li>
+              <p>If there is nothing in database, the program will tell what you have prepared for data import.</p>
+              <p>There is a simple explanation for each importing file to help you locate what data file should import when you select browse button.</p>
+              <p>After all the paths have been selected, press Import button and wait for a moment, all the data will be imported to your database.</p>
+              <li>Data Which Don¡¯t Meet Your Demand in Database</li>
+              <p>After database is connected using database connection panel, pic2.6 is present by selecting File > Import Data > Database¡­ and you can import another data for further demand.</p>
+              <li>Data Which Meets Your Demand in Database</li>
+              <p>If data have been loaded into database, then you can perform RNA editing filters for real editing sites.</p>
+              </ul>
+              <h3>2.1.3	Loading BAM/SAM File (both DNA and RNA; or RNA alone)</h3>
+              <p>In order to make a full sight of all editing sites in genome scale, the BAM/SAM file relevant to VCF file which has been imported to database is needed and will be present in Chromosome Viewer. The program supports single end and paired end reads, and unlike many other formats it is also able to describe reads which map across splice junctions.</p>
+              <p>The SAM/BAM format is well defined. We provide an option dialog to help you import your BAM/SAM data so you don't need to specify much information. </p>
+              <ul>
+              <li>Remove duplicate reads</li>
+              <p>Removing duplicate reads (reads of the same length and sequence identity) is a widely used practice to correct bias when analyzing NGS data. Tick if you want to remove. We strongly recommend you remove them because it may influence the result of coverage. </p>
+              <li>Min mapping quality</li>
+              <p>Control the minimum mapping quality when importing data. You can choose to filter some reads either when importing data or when executing basic filter througe database based on their mapping quality scores. The quality score ranges from 0 to 255 (with higher scores being better), and if you set a filter value then only mapped reads with a score above this value will be imported. Not all read mappers will include a score value so depending on where the file you are importing came from this option may have no effect.</p>
+              </ul>
+              <h3>2.1.4	Setting filters</h3>
+              <p>At least six kinds of filters are intergrated into the software. Please see below for more information. Before setting filters, database must be connected successfully first. Original editing sites will be present as a root tree named All Probes within Data Viewer. While one filter has been executed, a leaf connected to this tree will be born associated with the rest editing sites.</p>
+              <p>For example, at first, we have imported BJ22.RNA.chr8.snvs.vcf and BJ22.RNA.chr8.snvs.bam file into database which has 9530 potential editing sites.</p>
+              <p>Then we execute the Basic Filter with that quality is larger than 20 and coverage is larger than 6.</p>
+              <p>After a few seconds of calculating, there are 712 editing sites remained and a leaf will be produced within Data Viewer to describe and check what you have filtered out as following illustration. At the same time, the Genome Viewer and Chromosome Viewer will show the editing sites by different colour.</p>
+              <h3>2.1.5	Reports</h3>
+              <p>For now, we only support exporting editing sites information in text format.</p>
+              <h2 id="section2.2">2.2 Opening an Existing Project</h2>
+              <p>To open an existing project select File > Open Project from the main menu. All RED project files use a .red file extension. The file menu also contains a list of the five most recently opened projects which you can use to quickly re-open.</p>
+              <p>A RED project stores all of the Data Set, Data Group, Probe Set and Probe List information for your project. It also remembers which annotation and data tracks were visible.</p>
+              <p>Although it stores the name of the genome you were using it doesn't contain the actual genome data. If you are using RED on a new machine it will therefore automatically download and install the required genome when you open a project file. If you want to use RED when not connected to a network you therefore need to ensure that the correct genome has been installed on your machine before disconnecting it from the internet. Once downloaded, genomes will be cached on your machine for future use.</p>
+              <p>When opening a project RED checks to see if the project file is compatible with the version of RED you are using. If you try to open a project file from a newer version of RED on an older RED version you may get an error telling you you need to upgrade to the newest version of RED. Newer versions of RED can always open project files from older versions of the program.</p>
+           
+           
+           
+           
+           </div>
+        </div>
+        <!-- ·ÖÀ¸ ÄÚÈÝÖ÷ÌåÍê -->
+        
       </div>
-      
-      
-      
-      
-      
       
     </div>
 
