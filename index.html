@@ -27,10 +27,16 @@
     font-size: 18px;
     }
     img{
-    height:300px;
+    height:400px;
     width:600px;
     display: block; 
-    margin:auto; 
+    margin:auto;
+    }
+    .imgname{
+    text-align:center;
+    font-family: Times New Roman;
+    font-size: 15px;
+    font-style:italic;
     }
     </style>
   </head>
@@ -109,6 +115,7 @@
               <h2 id="section1.1">1.1 What is RED</h2>
               <p>RED (RNA Editing events Detector) is a program to detect and visualize RNA editing events at genomic scale using next-generation sequencing data. RNA editing is one of the post- or co-transcriptional processes with modification of RNA nucleotides from their genome-encoded sequence. In human, RNA editing event occurs mostly by deamination of adenosine to inosine (A-to-I) conversion through ADAR enzymes {ref}.</p>
               <img src="/img/pic1.1.png" alt=""/>
+              <p class="imgname">Pic.1.1 Main display screen of RED</p>
               <p>RED is a full Java-based program with graphic user interface (GUI), which works on all series of systems, including Windows, Linux or Mac OS X. The software intergrates various steps to filter spurisous variant sites. Formal statistical test is carried out to identify reliable RNA editing sites. Potential RNA editing sites are visualized in the context of reference gene. RED enables the analysis of RNA editing events at two levels using VCF file from different sources and the presentation of full mapped sequence data using BAM/SAM file:</p>
               <ul>
               <li>Detection of RNA editing sites by using RNA Variant Calling Format data alone (i.e., De Novo identification)</li>
@@ -132,7 +139,7 @@
               <p>Although default configuration can ensure your server work well, you can edit your configure file to get better performance. Default path is /etc/my.cnf in Linux system. You can use MySQL Workbench to configure your server efficiently for Windows system.</p>
               <h3>1.3.3	Install R Environment</h3>
               <p>Download site: http://www.r-project.org/</p>
-              <p>You have to install package ¡°rJava¡± in R which ensures connection between R and Java. Open R Window and type:<code>install.packages(rJava)</code>.The package will be installed automatically if the device has been connected to the Internet.</p>
+              <p>You have to install package <code>rJava</code> in R which ensures connection between R and Java. Open R Window and type:<code>install.packages(rJava)</code>.The package will be installed automatically if the device has been connected to the Internet.</p>
               <h2 id="section1.4">1.4 Terminology</h2>
               <p>There are a few terms used throughout the RED documentation which it is useful to understand before using the program.</p>
               <h3>1.4.1	In Molecular Biology</h3>
@@ -153,7 +160,7 @@
               <li>Data Group</li>
               <p>A data group is to merge two or more data sets with same biological conditions to make comparisons for some purposes (e.g., compare RNA editing sites between cancer patient and non-cancer patient). A data group does not contain any real data, we just aggregate data sets needed for research and save the results of comparison.</p>
               <li>Data Store</li>
-              <p>A data store may refers to either a data set or data group where it doesn¡¯t matter which one you have. Most analyses and displays in RED mostly operate on data stores and they work equally well with either data sets or data groups.</p>
+              <p>A data store may refers to either a data set or data group where it does not matter which one you have. Most analyses and displays in RED mostly operate on data stores and they work equally well with either data sets or data groups.</p>
               <li>Probe</li>
               <p>A probe represents a potential editing site which contains its information of coordinate and editing base for now. We will add more information of editing sites to a probe with subsequent edition. </p>
               <li>Probe Set</li>
@@ -165,26 +172,44 @@
               <h1 id="chapter2" class="page-header">2 Getting Started</h1>
               <h2 id="section2.1">2.1 Starting a New Project</h2>
               <h3>2.1.1	Select a Genome</h3>
-              <p>To start a new project, you may first select a new genome which you want to research. When program is open, select File > New Project¡­ to select a new genome. If there isn¡¯t any genome file in local host, a warning notification will pop up as the following is showed and tell you what you should do.</p>
+              <p>To start a new project, you may first select a new genome which you want to research. When program is open, select File > New Project ¡­ to select a new genome. If there is not any genome file in local host, a warning notification will pop up as the following is showed and tell you what you should do.</p>
+              <img src="/img/pic2.1.png" alt=""/>
+              <p class="imgname">Pic2.1 Warning when there is no genome in genome directory</p>
               <p>If you choose to download a new genome, press Import New button and find out the new genome you need.</p>
+              <img src="/img/pic2.2.png" alt=""/>
+              <p class="imgname">Pic2.2 Select a new genome to download</p>
               <p>After the download progress bar comes to the end, the following select genome dialog will appear.</p>
+              <img src="/img/pic2.3.png" alt=""/>
+              <p class="imgname">Pic2.3 Select a new genome to import</p>
               <p>It is noteworthy that it takes a little long time for the first time when importing genome data into our software. We have a cache mechanism to make it faster for the second time you reload the same genome. Once you have selected your genome and it has been loaded you can move on to the next step.</p>
               <h3>2.1.2	Connecting to MySQL Database</h3>
-              <p>A simple database connection dialog will pop up when you select File > Connect to MySQL¡­ as the following illustration:</p>
+              <p>A simple database connection dialog will pop up when you select File > Connect to MySQL ¡­ as the following illustration:</p>
+              <img src="/img/pic2.4.png" alt=""/>
+              <p class="imgname">Pic2.4 Connect to MySQL database</p>
               <p>After connection is successful, the program will detect whether the database had imported data before and make a relevant notification to tell you the next step.</p>
               <ul>
               <li>Nothing in Database</li>
               <p>If there is nothing in database, the program will tell what you have prepared for data import.</p>
+              <img src="/img/pic2.5.png" alt=""/>
+              <p class="imgname">Pic2.5 Data import notification</p>
+              <img src="/img/pic2.6.png" alt=""/>
+              <p class="imgname">Pic2.6 Data import dialog</p>
               <p>There is a simple explanation for each importing file to help you locate what data file should import when you select browse button.</p>
+              <img src="/img/pic2.7.png" alt=""/>
+              <p class="imgname">Pic2.7 Hint for what data you should import</p>
               <p>After all the paths have been selected, press Import button and wait for a moment, all the data will be imported to your database.</p>
-              <li>Data Which Don¡¯t Meet Your Demand in Database</li>
-              <p>After database is connected using database connection panel, pic2.6 is present by selecting File > Import Data > Database¡­ and you can import another data for further demand.</p>
+              <li>Data Which Do Not Meet Your Demand in Database</li>
+              <p>After database is connected using database connection panel, pic2.6 is present by selecting File > Import Data > Database ¡­ and you can import another data for further demand.</p>
               <li>Data Which Meets Your Demand in Database</li>
+              <img src="/img/pic2.8.png" alt=""/>
+              <p class="imgname">Pic2.8 Hint when database connection is successful and data has loaded to database</p>
               <p>If data have been loaded into database, then you can perform RNA editing filters for real editing sites.</p>
               </ul>
               <h3>2.1.3	Loading BAM/SAM File (both DNA and RNA; or RNA alone)</h3>
               <p>In order to make a full sight of all editing sites in genome scale, the BAM/SAM file relevant to VCF file which has been imported to database is needed and will be present in Chromosome Viewer. The program supports single end and paired end reads, and unlike many other formats it is also able to describe reads which map across splice junctions.</p>
               <p>The SAM/BAM format is well defined. We provide an option dialog to help you import your BAM/SAM data so you don't need to specify much information. </p>
+              <img src="/img/pic2.9.png" alt=""/>
+              <p class="imgname">Pic2.9 An option dialog for importing BAM/SAM file</p>
               <ul>
               <li>Remove duplicate reads</li>
               <p>Removing duplicate reads (reads of the same length and sequence identity) is a widely used practice to correct bias when analyzing NGS data. Tick if you want to remove. We strongly recommend you remove them because it may influence the result of coverage. </p>
@@ -194,8 +219,14 @@
               <h3>2.1.4	Setting filters</h3>
               <p>At least six kinds of filters are intergrated into the software. Please see below for more information. Before setting filters, database must be connected successfully first. Original editing sites will be present as a root tree named All Probes within Data Viewer. While one filter has been executed, a leaf connected to this tree will be born associated with the rest editing sites.</p>
               <p>For example, at first, we have imported BJ22.RNA.chr8.snvs.vcf and BJ22.RNA.chr8.snvs.bam file into database which has 9530 potential editing sites.</p>
+              <img src="/img/pic2.10.png" alt=""/>
+              <p class="imgname">Pic2.10 RNA sequence data and potential editing sites within Data Viewer</p>
               <p>Then we execute the Basic Filter with that quality is larger than 20 and coverage is larger than 6.</p>
+              <img src="/img/pic2.11.png" alt=""/>
+              <p class="imgname">Pic2.11 Basic Filter options</p>
               <p>After a few seconds of calculating, there are 712 editing sites remained and a leaf will be produced within Data Viewer to describe and check what you have filtered out as following illustration. At the same time, the Genome Viewer and Chromosome Viewer will show the editing sites by different colour.</p>
+              <img src="/img/pic2.12.png" alt=""/>
+              <p class="imgname">Pic2.12 After executing basic filter, a probe list is generated</p>
               <h3>2.1.5	Reports</h3>
               <p>For now, we only support exporting editing sites information in text format.</p>
               <h2 id="section2.2">2.2 Opening an Existing Project</h2>
