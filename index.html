@@ -27,8 +27,6 @@
     font-size: 18px;
     }
     img{
-    height:400px;
-    width:600px;
     display: block; 
     margin:auto;
     }
@@ -114,7 +112,7 @@
               <h1 id="chapter1" class="page-header">1 Introduction</h1>
               <h2 id="section1.1">1.1 What is RED</h2>
               <p>RED (RNA Editing events Detector) is a program to detect and visualize RNA editing events at genomic scale using next-generation sequencing data. RNA editing is one of the post- or co-transcriptional processes with modification of RNA nucleotides from their genome-encoded sequence. In human, RNA editing event occurs mostly by deamination of adenosine to inosine (A-to-I) conversion through ADAR enzymes {ref}.</p>
-              <img src="/img/pic1.1.png" alt=""/>
+              <img src="/img/pic1.1.png" alt="" height=400px width=600px/>
               <p class="imgname">Pic.1.1 Main display screen of RED</p>
               <p>RED is a full Java-based program with graphic user interface (GUI), which works on all series of systems, including Windows, Linux or Mac OS X. The software intergrates various steps to filter spurisous variant sites. Formal statistical test is carried out to identify reliable RNA editing sites. Potential RNA editing sites are visualized in the context of reference gene. RED enables the analysis of RNA editing events at two levels using VCF file from different sources and the presentation of full mapped sequence data using BAM/SAM file:</p>
               <ul>
@@ -173,42 +171,42 @@
               <h2 id="section2.1">2.1 Starting a New Project</h2>
               <h3>2.1.1	Select a Genome</h3>
               <p>To start a new project, you may first select a new genome which you want to research. When program is open, select File > New Project бн to select a new genome. If there is not any genome file in local host, a warning notification will pop up as the following is showed and tell you what you should do.</p>
-              <img src="/img/pic2.1.png" alt=""/>
+              <img src="/img/pic2.1.png" alt="" height=150px width=800px >
               <p class="imgname">Pic2.1 Warning when there is no genome in genome directory</p>
               <p>If you choose to download a new genome, press Import New button and find out the new genome you need.</p>
-              <img src="/img/pic2.2.png" alt=""/>
+              <img src="/img/pic2.2.png" alt="" height=300px width=300px/>
               <p class="imgname">Pic2.2 Select a new genome to download</p>
               <p>After the download progress bar comes to the end, the following select genome dialog will appear.</p>
-              <img src="/img/pic2.3.png" alt=""/>
+              <img src="/img/pic2.3.png" alt="" height=400px width=400px/>
               <p class="imgname">Pic2.3 Select a new genome to import</p>
               <p>It is noteworthy that it takes a little long time for the first time when importing genome data into our software. We have a cache mechanism to make it faster for the second time you reload the same genome. Once you have selected your genome and it has been loaded you can move on to the next step.</p>
               <h3>2.1.2	Connecting to MySQL Database</h3>
               <p>A simple database connection dialog will pop up when you select File > Connect to MySQL бн as the following illustration:</p>
-              <img src="/img/pic2.4.png" alt=""/>
+              <img src="/img/pic2.4.png" alt="" height=400px width=400px/>
               <p class="imgname">Pic2.4 Connect to MySQL database</p>
               <p>After connection is successful, the program will detect whether the database had imported data before and make a relevant notification to tell you the next step.</p>
               <ul>
               <li>Nothing in Database</li>
               <p>If there is nothing in database, the program will tell what you have prepared for data import.</p>
-              <img src="/img/pic2.5.png" alt=""/>
+              <img src="/img/pic2.5.png" alt=""/ height=400px width=400px>
               <p class="imgname">Pic2.5 Data import notification</p>
-              <img src="/img/pic2.6.png" alt=""/>
+              <img src="/img/pic2.6.png" alt=""/ height=350px width=600px>
               <p class="imgname">Pic2.6 Data import dialog</p>
               <p>There is a simple explanation for each importing file to help you locate what data file should import when you select browse button.</p>
-              <img src="/img/pic2.7.png" alt=""/>
+              <img src="/img/pic2.7.png" alt=""/ height=350px width=600px>
               <p class="imgname">Pic2.7 Hint for what data you should import</p>
               <p>After all the paths have been selected, press Import button and wait for a moment, all the data will be imported to your database.</p>
               <li>Data Which Do Not Meet Your Demand in Database</li>
               <p>After database is connected using database connection panel, pic2.6 is present by selecting File > Import Data > Database бн and you can import another data for further demand.</p>
               <li>Data Which Meets Your Demand in Database</li>
-              <img src="/img/pic2.8.png" alt=""/>
+              <img src="/img/pic2.8.png" alt=""/ height=380px width=420px>
               <p class="imgname">Pic2.8 Hint when database connection is successful and data has loaded to database</p>
               <p>If data have been loaded into database, then you can perform RNA editing filters for real editing sites.</p>
               </ul>
               <h3>2.1.3	Loading BAM/SAM File (both DNA and RNA; or RNA alone)</h3>
               <p>In order to make a full sight of all editing sites in genome scale, the BAM/SAM file relevant to VCF file which has been imported to database is needed and will be present in Chromosome Viewer. The program supports single end and paired end reads, and unlike many other formats it is also able to describe reads which map across splice junctions.</p>
               <p>The SAM/BAM format is well defined. We provide an option dialog to help you import your BAM/SAM data so you don't need to specify much information. </p>
-              <img src="/img/pic2.9.png" alt=""/>
+              <img src="/img/pic2.9.png" alt=""/ height=420px width=380px>
               <p class="imgname">Pic2.9 An option dialog for importing BAM/SAM file</p>
               <ul>
               <li>Remove duplicate reads</li>
@@ -219,13 +217,13 @@
               <h3>2.1.4	Setting filters</h3>
               <p>At least six kinds of filters are intergrated into the software. Please see below for more information. Before setting filters, database must be connected successfully first. Original editing sites will be present as a root tree named All Probes within Data Viewer. While one filter has been executed, a leaf connected to this tree will be born associated with the rest editing sites.</p>
               <p>For example, at first, we have imported BJ22.RNA.chr8.snvs.vcf and BJ22.RNA.chr8.snvs.bam file into database which has 9530 potential editing sites.</p>
-              <img src="/img/pic2.10.png" alt=""/>
+              <img src="/img/pic2.10.png" alt=""/ height=180px width=220px>
               <p class="imgname">Pic2.10 RNA sequence data and potential editing sites within Data Viewer</p>
               <p>Then we execute the Basic Filter with that quality is larger than 20 and coverage is larger than 6.</p>
-              <img src="/img/pic2.11.png" alt=""/>
+              <img src="/img/pic2.11.png" alt=""/ height=250px width=380px>
               <p class="imgname">Pic2.11 Basic Filter options</p>
               <p>After a few seconds of calculating, there are 712 editing sites remained and a leaf will be produced within Data Viewer to describe and check what you have filtered out as following illustration. At the same time, the Genome Viewer and Chromosome Viewer will show the editing sites by different colour.</p>
-              <img src="/img/pic2.12.png" alt=""/>
+              <img src="/img/pic2.12.png" alt=""/ height=250px width=420px>
               <p class="imgname">Pic2.12 After executing basic filter, a probe list is generated</p>
               <h3>2.1.5	Reports</h3>
               <p>For now, we only support exporting editing sites information in text format.</p>
