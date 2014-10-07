@@ -1,281 +1,506 @@
 <!DOCTYPE HTML>
 <html lang="zh-cn">
-  <head>
-    <title>RED</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <META content="text/html; charset=gb2312" http-equiv="Content-Type">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <!-- Optional Bootstrap Theme -->
-    <link href="data:text/css;charset=utf-8," data-href="http://cdn.bootcss.com/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-    <link rel="icon" href="/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <style type="text/css">
-    /* Custom Styles */
-    ul.nav-tabs.affix{
-        top: 30px; /* Set the top position of pinned element */
-        width:170px;
-    }
-    p,ul{
-    font-family: Times New Roman;
-    font-size: 18px;
-    }
-    img{
-    display: block; 
-    margin:auto;
-    }
-    .imgname{
-    text-align:center;
-    font-family: Times New Roman;
-    font-size: 15px;
-    font-style:italic;
-    }
-    </style>
-  </head>
-  
-  <body>
-      <!-- 页面顶端 -->
-      <div class="navbar navbar-inverse " role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="">RNA Editing Detector</a>
-        </div>
-      </div>
-    </div>
-    
-    
-   <div class="container"> 
-      
-      <!-- 项目描述 -->
-      <div class="jumbotron">
-         <div class="container">
-           <h2>RED---RNA Editing Detector</h2>
-           <h5>A program to detect and visualize RNA editing events at the genomic scale using next-generation sequencing (NGS) data</h5>
-           <p><a class="btn btn-lg btn-success" href="https://github.com/iluhcm/REDetector" role="button">Download</a></p>
-         </div>
-       </div>
-    
-  
-      <!-- 分栏 -->
-      <div class="row">
-      <!-- 分栏 索引列表 -->
-        <div class="col-md-2">
-            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
-               <div class="panel-group" id="accordion">
-                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                       <h4 class="panel-title">
-                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1	Introduction</a>
-                       </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                      <div class="panel-body"><a href="#section1.1">1.1 What is RED</a></div>
-                      <div class="panel-body"><a href="#section1.2">1.2 Prerequisites</a></div>
-                      <div class="panel-body"><a href="#section1.3">1.3 Installation</a></div>
-                      <div class="panel-body"><a href="#section1.4">1.4 Terminology</a></div>
-                    </div>
-                 </div>
-                 
-                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                       <h4 class="panel-title">
-                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2	Getting Started</a>
-                       </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                       <div class="panel-body"><a href="#section2.1">2.1 Starting a New Project</a></div>
-                      <div class="panel-body"><a href="#section2.2">2.2 Opening an Existing Project</a></div>
-                    </div>
-                 </div>
-                 
-				 <div class="panel panel-default">
-                    <div class="panel-heading">
-                       <h4 class="panel-title">
-                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">3	Visualisation</a>
-                       </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse">
-                      <div class="panel-body"><a href="#section3.1">3.1	Main Window</a></div>
-                      <div class="panel-body"><a href="#section3.2">3.2	Toolbar Panel</a></div>
-                      <div class="panel-body"><a href="#section3.3">3.3	Directory Panel</a></div>
-                      <div class="panel-body"><a href="#section3.4">3.4	Genome Panel</a></div>
-                      <div class="panel-body"><a href="#section3.5">3.5	Chromosome Panel</a></div>
-                      <div class="panel-body"><a href="#section3.5">3.6	Status-bar Panel</a></div>
-                    </div>
-                 </div>
-				 
-                 
-              </div>
-            </ul>
-        </div>
-        
-        <!-- 分栏 内容主体 -->
-        <div class="col-md-10"  style="padding-left: 40px;padding-right: 20px;">
-           <div class="bs-docs-section">
-              <!-- 第一章 -->
-              <h1 id="chapter1" class="page-header">1 Introduction</h1>
-              <h3 id="section1.1">1.1 What is RED</h3>
-              <p>RNA editing is one of the post- or co-transcriptional processes with modification of RNA nucleotides from their genome-encoded sequence. In human, RNA editing event occurs mostly by deamination of adenosine to inosine (A-to-I) conversion through ADAR enzymes.</p>
-			  <p>RED (RNA Editing Detector) is a program to detect and visualize RNA editing events at the genomic scale using next-generation sequencing (NGS) data. The software intergrates multiple steps to filter spurisous variant sites, and then performs formal statistical tests to identify reliable RNA editing sites. A potential RNA editing site can be visualized in the context of reference genome (/gene).</p>
-              <img src="/img/fig.1.1.png" alt="" height=640px width=960px/>
-              <p class="imgname">Fig. 1.1 A screen shot of RED</p>
-              <p>RED is a Java-based program with Graphic User Interface (GUI), which works on mainstream operating systems (e.g., Windows, Linux and Mac OS X). To make it more efficient, everlasting and faster-saving, we use MySQL database managing system (DBMS) in manuplicating huge NGS data. In addition. In addition, we used functions in R (www.R-project.org) in performing statistical analysis. However, you’ll never manipulate R and MySQL when you used RED program. All of the operation relative to R and MySQL is completed by RED automatically. RED enables the analysis of RNA editing events at two levels (illustrated below) using VCF files from different sources and the presentation of full mapped sequence data using BAM file:</p>
-              <ul>
-              <li>Detection of RNA editing sites using RNA-seq data alone (i.e., De Novo identification)</li>
-              <li>Detection of RNA editing events using both DNA-sequencing data (e.g., whole exome sequencing) and RNA-Seq data</li>
-              </ul>
-              <h3 id="section1.2">1.2 Prerequisites</h3>
-              <ul>
-              <li>Java Runtime Environment (jdk 1.7.0_21 or later)</li>
-              <li>MySQL Database Management System (MySQL 5.6.19 or later)</li>
-              <li>R Environment (R 3.1.1 or later) </li>
-              </ul>
-              <h3 id="section1.3">1.3 Installation</h3>
-              <h4>1.3.1	Install Java Runtime Environment</h4>
-              <p>Java Runtime Environment (JRE) is basically the Java Virtual Machine (JVM) where your Java programs run on. It also includes browser plugins for Applet execution. Java Development Kit (JDK) is the full featured Software Development Kit (SDK) for Java, including JRE, and the compilers and tools (e.g., JavaDoc, and Java Debugger) to create and compile programs. In order to run RED, we need to install either JRE or JDK.</p>
-              <ul>
-              <li>JDK:</li>
-			  <p>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</p>
-              <li>JRE:</li>
-			  <p>http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html</p>
-              </ul>
-              <h4>1.3.2	Install MySQL Database</h4>
-              <p>RED stores all data into database so that we can reuse the data for research. MySQL is one of the best choice since it is free and efficient. Although default configuration in MySQL can ensure your server works well, you could edit the configure file to gain better performance. For Linux System, edit the parameters in the file of /etc/my.cnf (default configuration path). For Windows System, you could use MySQL Workbench to configure your server efficiently.</p>
-			  <ul>
-              <li>MySQL:</li>
-			  <p>http://dev.mysql.com/downloads/mysql/</p>
-			  </ul>
-              <h3>1.3.3	Install R Environment</h3>
-              <p>Download site: http://www.r-project.org/</p>
-              <p>You have to install package <code>rJava</code> in R which ensures connection between R and Java. Open R Window and type:<code>install.packages(rJava)</code>.The package will be installed automatically if the device has been connected to the Internet.</p>
-              <h2 id="section1.4">1.4 Terminology</h2>
-              <p>There are a few terms used throughout the RED documentation which it is useful to understand before using the program.</p>
-              <h3>1.4.1	In Molecular Biology</h3>
-              <ul>
-              <li>RNA Editing</li>
-              <p>RNA editing one of the post- or co-transcriptional processes with modification of RNA nucleotides from their genome-encoded sequence</p>
-              <li>Reference Genome Database</li>
-              <p>Reference genome database is a comprehensive, integrated, non-redundant, well-annotated set of reference sequences including genomic, transcript, and protein., e.g., hg19</p>
-              <li>Sequence Alignment Map (.bam/.sam) File</li>
-              <p>SAM format is a text format for storing sequence data in a series of tab delimited ASCII columns, while BAM format stores the same data in a compressed, indexed, binary form.</p>
-              <li>Variant Calling Format (.vcf) File</li>
-              <p>VCF is a text file format (most likely stored in a compressed manner) which contains meta-information lines, a header line, and then data lines each containing information about a position in the genome.</p>
-              </ul>
-              <h3>1.4.2	In Program</h3>
-              <ul>
-              <li>Data Set</li>
-              <p>A data set stores a set of data imported from a single file with an efficient way to be handled and presented. For now, a data set usually refers to a BAM/SAM file that contains RNA sequencing information, which we present to display screen.</p>
-              <li>Data Group</li>
-              <p>A data group is to merge two or more data sets with same biological conditions to make comparisons for some purposes (e.g., compare RNA editing sites between cancer patient and non-cancer patient). A data group does not contain any real data, we just aggregate data sets needed for research and save the results of comparison.</p>
-              <li>Data Store</li>
-              <p>A data store may refers to either a data set or data group where it does not matter which one you have. Most analyses and displays in RED mostly operate on data stores and they work equally well with either data sets or data groups.</p>
-              <li>Probe</li>
-              <p>A probe represents a potential editing site which contains its information of coordinate and editing base for now. We will add more information of editing sites to a probe with subsequent edition. </p>
-              <li>Probe Set</li>
-              <p>A probe set stores all probes from initial vcf file, namely stores all editing sites without using any filter. It is also the root of a pipeline tree when executing any filter to the original probe set. The probe set is produced when a vcf file has been input into database.</p>
-              <li>Probe List</li>
-              <p>A probe list is a subset of your probe set. Probe lists are produced by the various filters available within RED, which store the rest of editing sites and filter out spurious sites. However, we can produce probe lists from another probe list which had executed one or more filters.</p>
-              </ul>
-              <!-- 第二章 -->
-              <h1 id="chapter2" class="page-header">2 Getting Started</h1>
-              <h2 id="section2.1">2.1 Starting a New Project</h2>
-              <h3>2.1.1	Select a Genome</h3>
-              <p>To start a new project, you may first select a new genome which you want to research. When program is open, select File > New Project … to select a new genome. If there is not any genome file in local host, a warning notification will pop up as the following is showed and tell you what you should do.</p>
-              <img src="/img/pic2.1.png" alt="" height=130px width=700px >
-              <p class="imgname">Pic2.1 Warning when there is no genome in genome directory</p>
-              <p>If you choose to download a new genome, press Import New button and find out the new genome you need.</p>
-              <img src="/img/pic2.2.png" alt="" height=300px width=300px/>
-              <p class="imgname">Pic2.2 Select a new genome to download</p>
-              <p>After the download progress bar comes to the end, the following select genome dialog will appear.</p>
-              <img src="/img/pic2.3.png" alt="" height=300px width=300px/>
-              <p class="imgname">Pic2.3 Select a new genome to import</p>
-              <p>It is noteworthy that it takes a little long time for the first time when importing genome data into our software. We have a cache mechanism to make it faster for the second time you reload the same genome. Once you have selected your genome and it has been loaded you can move on to the next step.</p>
-              <h3>2.1.2	Connecting to MySQL Database</h3>
-              <p>A simple database connection dialog will pop up when you select File > Connect to MySQL … as the following illustration:</p>
-              <img src="/img/pic2.4.png" alt="" height=300px width=300px/>
-              <p class="imgname">Pic2.4 Connect to MySQL database</p>
-              <p>After connection is successful, the program will detect whether the database had imported data before and make a relevant notification to tell you the next step.</p>
-              <ul>
-              <li>Nothing in Database</li>
-              <p>If there is nothing in database, the program will tell what you have prepared for data import.</p>
-              <img src="/img/pic2.5.png" alt=""/ height=300px width=300px>
-              <p class="imgname">Pic2.5 Data import notification</p>
-              <img src="/img/pic2.6.png" alt=""/ height=280px width=450px>
-              <p class="imgname">Pic2.6 Data import dialog</p>
-              <p>There is a simple explanation for each importing file to help you locate what data file should import when you select browse button.</p>
-              <img src="/img/pic2.7.png" alt=""/ height=280px width=450px>
-              <p class="imgname">Pic2.7 Hint for what data you should import</p>
-              <p>After all the paths have been selected, press Import button and wait for a moment, all the data will be imported to your database.</p>
-              <li>Data Which Do Not Meet Your Demand in Database</li>
-              <p>After database is connected using database connection panel, pic2.6 is present by selecting File > Import Data > Database … and you can import another data for further demand.</p>
-              <li>Data Which Meets Your Demand in Database</li>
-              <img src="/img/pic2.8.png" alt=""/ height=300px width=300px>
-              <p class="imgname">Pic2.8 Hint when database connection is successful and data has loaded to database</p>
-              <p>If data have been loaded into database, then you can perform RNA editing filters for real editing sites.</p>
-              </ul>
-              <h3>2.1.3	Loading BAM/SAM File (both DNA and RNA; or RNA alone)</h3>
-              <p>In order to make a full sight of all editing sites in genome scale, the BAM/SAM file relevant to VCF file which has been imported to database is needed and will be present in Chromosome Viewer. The program supports single end and paired end reads, and unlike many other formats it is also able to describe reads which map across splice junctions.</p>
-              <p>The SAM/BAM format is well defined. We provide an option dialog to help you import your BAM/SAM data so you don't need to specify much information. </p>
-              <img src="/img/pic2.9.png" alt=""/ height=280px width=300px>
-              <p class="imgname">Pic2.9 An option dialog for importing BAM/SAM file</p>
-              <ul>
-              <li>Remove duplicate reads</li>
-              <p>Removing duplicate reads (reads of the same length and sequence identity) is a widely used practice to correct bias when analyzing NGS data. Tick if you want to remove. We strongly recommend you remove them because it may influence the result of coverage. </p>
-              <li>Min mapping quality</li>
-              <p>Control the minimum mapping quality when importing data. You can choose to filter some reads either when importing data or when executing basic filter througe database based on their mapping quality scores. The quality score ranges from 0 to 255 (with higher scores being better), and if you set a filter value then only mapped reads with a score above this value will be imported. Not all read mappers will include a score value so depending on where the file you are importing came from this option may have no effect.</p>
-              </ul>
-              <h3>2.1.4	Setting filters</h3>
-              <p>At least six kinds of filters are intergrated into the software. Please see below for more information. Before setting filters, database must be connected successfully first. Original editing sites will be present as a root tree named All Probes within Data Viewer. While one filter has been executed, a leaf connected to this tree will be born associated with the rest editing sites.</p>
-              <p>For example, at first, we have imported BJ22.RNA.chr8.snvs.vcf and BJ22.RNA.chr8.snvs.bam file into database which has 9530 potential editing sites.</p>
-              <img src="/img/pic2.10.png" alt=""/ height=121px width=171px>
-              <p class="imgname">Pic2.10 RNA sequence data and potential editing sites within Data Viewer</p>
-              <p>Then we execute the Basic Filter with that quality is larger than 20 and coverage is larger than 6.</p>
-              <img src="/img/pic2.11.png" alt=""/ height=200px width=300px>
-              <p class="imgname">Pic2.11 Basic Filter options</p>
-              <p>After a few seconds of calculating, there are 712 editing sites remained and a leaf will be produced within Data Viewer to describe and check what you have filtered out as following illustration. At the same time, the Genome Viewer and Chromosome Viewer will show the editing sites by different colour.</p>
-              <img src="/img/pic2.12.png" alt=""/ height=120px width=276px>
-              <p class="imgname">Pic2.12 After executing basic filter, a probe list is generated</p>
-              <h3>2.1.5	Reports</h3>
-              <p>For now, we only support exporting editing sites information in text format.</p>
-              <h2 id="section2.2">2.2 Opening an Existing Project</h2>
-              <p>To open an existing project select File > Open Project from the main menu. All RED project files use a .red file extension. The file menu also contains a list of the five most recently opened projects which you can use to quickly re-open.</p>
-              <p>A RED project stores all of the Data Set, Data Group, Probe Set and Probe List information for your project. It also remembers which annotation and data tracks were visible.</p>
-              <p>Although it stores the name of the genome you were using it doesn't contain the actual genome data. If you are using RED on a new machine it will therefore automatically download and install the required genome when you open a project file. If you want to use RED when not connected to a network you therefore need to ensure that the correct genome has been installed on your machine before disconnecting it from the internet. Once downloaded, genomes will be cached on your machine for future use.</p>
-              <p>When opening a project RED checks to see if the project file is compatible with the version of RED you are using. If you try to open a project file from a newer version of RED on an older RED version you may get an error telling you you need to upgrade to the newest version of RED. Newer versions of RED can always open project files from older versions of the program.</p>
-           
-           
-           
-           
-           </div>
-        </div>
-        <!-- 分栏 内容主体完 -->
-        
-      </div>
-      
-    </div>
+<head>
+<title>RED</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<META content="text/html; charset=gb2312" http-equiv="Content-Type">
+<!-- Bootstrap -->
+<link rel="stylesheet"
+	href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- Optional Bootstrap Theme -->
+<link href="data:text/css;charset=utf-8,"
+	data-href="http://cdn.bootcss.com/bootstrap/css/bootstrap-theme.min.css"
+	rel="stylesheet" id="bs-theme-stylesheet">
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed"
+	href="/apple-touch-icon-precomposed.png">
+<link rel="icon" href="/favicon.ico">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<style type="text/css">
+/* Custom Styles */
+ul.nav-tabs.affix {
+	top: 30px; /* Set the top position of pinned element */
+	width: 170px;
+}
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
-    <!-- Analytics
+p,ul {
+	font-family: Times New Roman;
+	font-size: 18px;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+
+.imgname {
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 15px;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body>
+	<!-- 页面顶端 -->
+	<div class="navbar navbar-inverse " role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="">RNA Editing Detector</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+
+		<!-- 项目描述 -->
+		<div class="jumbotron">
+			<div class="container">
+				<h2>RED---RNA Editing Detector</h2>
+				<h5>A program to detect and visualize RNA editing events at the
+					genomic scale using next-generation sequencing (NGS) data</h5>
+				<p>
+					<a class="btn btn-lg btn-success"
+						href="https://github.com/iluhcm/REDetector" role="button">Download</a>
+				</p>
+			</div>
+		</div>
+
+
+		<!-- 分栏 -->
+		<div class="row">
+			<!-- 分栏 索引列表 -->
+			<div class="col-md-2">
+				<ul class="nav nav-tabs nav-stacked" data-spy="affix"
+					data-offset-top="125">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseOne">1 Introduction</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<a href="#section1.1">1.1 What is RED</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section1.2">1.2 Prerequisites</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section1.3">1.3 Installation</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section1.4">1.4 Terminology</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseTwo">2 Getting Started</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									<a href="#section2.1">2.1 Starting a New Project</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section2.2">2.2 Opening an Existing Project</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseOne">3 Visualisation</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									<a href="#section3.1">3.1 Main Window</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section3.2">3.2 Toolbar Panel</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section3.3">3.3 Directory Panel</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section3.4">3.4 Genome Panel</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section3.5">3.5 Chromosome Panel</a>
+								</div>
+								<div class="panel-body">
+									<a href="#section3.5">3.6 Status-bar Panel</a>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</ul>
+			</div>
+
+			<!-- 分栏 内容主体 -->
+			<div class="col-md-10"
+				style="padding-left: 40px;padding-right: 20px;">
+				<div class="bs-docs-section">
+					<!-- 第一章 -->
+					<h1 id="chapter1" class="page-header">1 Introduction</h1>
+					<h3 id="section1.1">1.1 What is RED</h3>
+					<p>RNA editing is one of the post- or co-transcriptional
+						processes with modification of RNA nucleotides from their
+						genome-encoded sequence. In human, RNA editing event occurs mostly
+						by deamination of adenosine to inosine (A-to-I) conversion through
+						ADAR enzymes.</p>
+					<p>RED (RNA Editing Detector) is a program to detect and
+						visualize RNA editing events at the genomic scale using
+						next-generation sequencing (NGS) data. The software intergrates
+						multiple steps to filter spurisous variant sites, and then
+						performs formal statistical tests to identify reliable RNA editing
+						sites. A potential RNA editing site can be visualized in the
+						context of reference genome (/gene).</p>
+					<img src="img/fig.1.1.png" alt="" height=640px width=960px />
+					<p class="imgname">Fig. 1.1 A screen shot of RED</p>
+					<p>RED is a Java-based program with Graphic User Interface
+						(GUI), which works on mainstream operating systems (e.g., Windows,
+						Linux and Mac OS X). To make it more efficient, everlasting and
+						faster-saving, we use MySQL database managing system (DBMS) in
+						manuplicating huge NGS data. In addition. In addition, we used
+						functions in R (www.R-project.org) in performing statistical
+						analysis. However, you'll never manipulate R and MySQL when you
+						used RED program. All of the operation relative to R and MySQL is
+						completed by RED automatically. RED enables the analysis of RNA
+						editing events at two levels (illustrated below) using VCF files
+						from different sources and the presentation of full mapped
+						sequence data using BAM file:</p>
+					<ul>
+						<li>Detection of RNA editing sites using RNA-seq data alone
+							(i.e., De Novo identification)</li>
+						<li>Detection of RNA editing events using both DNA-sequencing
+							data (e.g., whole exome sequencing) and RNA-Seq data</li>
+					</ul>
+					<h3 id="section1.2">1.2 Prerequisites</h3>
+					<ul>
+						<li>Java Runtime Environment (jdk 1.7.0_21 or later)</li>
+						<li>MySQL Database Management System (MySQL 5.6.19 or later)</li>
+						<li>R Environment (R 3.1.1 or later)</li>
+					</ul>
+					<h3 id="section1.3">1.3 Installation</h3>
+					<h4>1.3.1 Install Java Runtime Environment</h4>
+					<p>Java Runtime Environment (JRE) is basically the Java Virtual
+						Machine (JVM) where your Java programs run on. It also includes
+						browser plugins for Applet execution. Java Development Kit (JDK)
+						is the full featured Software Development Kit (SDK) for Java,
+						including JRE, and the compilers and tools (e.g., JavaDoc, and
+						Java Debugger) to create and compile programs. In order to run
+						RED, we need to install either JRE or JDK.</p>
+					<ul>
+						<li>JDK:</li>
+						<p>
+							<a href="URI">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>
+						</p>
+						<li>JRE:</li>
+						<p>
+							<a href="URI">http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html</a>
+						</p>
+					</ul>
+					<h4>1.3.2 Install MySQL Database</h4>
+					<p>RED stores all data into database so that we can reuse the
+						data for research. MySQL is one of the best choice since it is
+						free and efficient. Although default configuration in MySQL can
+						ensure your server works well, you could edit the configure file
+						to gain better performance. For Linux System, edit the parameters
+						in the file of /etc/my.cnf (default configuration path). For
+						Windows System, you could use MySQL Workbench to configure your
+						server efficiently.</p>
+					<ul>
+						<li>MySQL:</li>
+						<p>
+							<a href="URI">http://dev.mysql.com/downloads/mysql/</a>
+						</p>
+					</ul>
+					<h4>
+						1.3.3 Install <i>R</i> Environment
+					</h4>
+
+					<p>R is a free software environment for statistical computing
+						and graphics. It compiles and runs on a wide variety of UNIX
+						platforms, Windows and MacOS. To download R, please choose your
+						preferred CRAN mirror. The package of “rJava” in R is required,
+						which ensures connection between R and Java. Open a R Window and
+						type:</p>
+					<p>
+						<code>
+							<i>install.packages(rJava)</i>
+						</code>
+					</p>
+					<p>The package will be installed automatically with Internet
+						connection.</p>
+					<ul>
+						<li>R:</li>
+						<p>
+							<a href="URI">http://www.r-project.org/</a>
+						</p>
+					</ul>
+					<h3 id="section1.4">1.4 Terminology</h3>
+					<p>There are a few terms used throughout the RED documentation
+						which it is useful to understand before using the program.</p>
+					<h4>1.4.1 Molecular Biology</h4>
+					<ul>
+						<li>RNA Editing</li>
+						<p>RNA editing is one of the post- or co-transcriptional
+							processes with modification of RNA nucleotides from their
+							genome-encoded sequence.</p>
+						<li>Reference Genome</li>
+						<p>Reference genome is a comprehensive, integrated,
+							non-redundant, well-annotated set of reference sequences
+							including genomic, transcript, and protein (hg19).</p>
+						<li>Sequence Alignment Map (<i>.bam/.sam</i>) File
+						</li>
+						<p>SAM format is a text format for storing sequence data in a
+							series of tab delimited ASCII columns, while BAM format stores
+							the same data in a compressed, indexed, binary form.</p>
+						<li>Variant Calling Format (<i>.vcf</i>) File
+						</li>
+						<p>VCF is a text file format (most likely stored in a
+							compressed manner) which contains meta-information lines, a
+							header line, and then data lines each containing information
+							about a position in the genome.</p>
+					</ul>
+					<h4>1.4.2 Program</h4>
+					<ul>
+						<li>Data Set</li>
+						<p>A data set stores a set of data, which is imported from a
+							single file. It is an efficient way to be handled and presented.
+							In program, a data set refers to a BAM/SAM file that contains
+							sequence alignment/map information, which is displayed in the
+							context of reference sequence.</p>
+						<li>Data Group</li>
+						<p>A data group contains two or more data sets with different
+							biological conditions to make it compared for some purposes
+							(e.g., comparing RNA editing sites identified in cancer tissues
+							and adjacent normal tissues). In a given data group, we aggregate
+							data sets needed for research and save the results of comparison.
+							This function has not completely worked , and we will try our
+							best to make it come true in the next version.</p>
+						<li>Data Store</li>
+						<p>A data store refers to either a data set or a data group.
+							Most analyses and visualizations in RED operate on data stores
+							and they work equally well with either data sets or data groups.</p>
+						<li>Probe/ProbeBean</li>
+						<p>
+							A probe represents a potential RNA-editing site which contains
+							basic information (e.g., coordinate, and editing base), while a
+							probe bean contains all information derived from <i>.vcf</i>
+							file.
+						</p>
+						<li>Probe Set</li>
+						<p>A probe set stores all probes from an initial vcf file,
+							namely stores all RNA-editing sites without using any filter. It
+							is also the root of a pipeline tree when executing any filter to
+							the original probe set. The probe set is produced when a vcf file
+							has been input into database.</p>
+						<li>Probe List</li>
+						<p>A probe list is a subset of the probe set. Probe lists are
+							generated by one or more filters implemented in RED, which store
+							the remaining editing sites after filteration. However, we can
+							produce probe lists from another probe list which had executed
+							one or more filters.</p>
+					</ul>
+					<!-- 第二章 -->
+					<h1 id="chapter2" class="page-header">2 Getting Started</h1>
+					<h3 id="section2.1">2.1 Starting a New Project</h3>
+					<p>Before starting a new project, make sure that you have
+						configured all running environments mentioned in the Prerequisites
+						section. You can either select a genome or connect to MySQL
+						database when starting a new project, but both should be performed
+						to make the program work properly.</p>
+					<h4>2.1.1 Select a Genome</h4>
+					<p>
+						To start a new project, you may first select a new genome of
+						interest. When the program is open, select <i>File > New
+							Project…</i> to select a new genome. If there isn't any genome file
+						in the local host, a warning notification will pop up as the
+						following illustrated and tell you what you should do.
+					</p>
+					<img src="/img/fig.2.1.png" alt="" height=148px width=762px>
+					<p class="imgname">Fig. 2.1 Warning when there is no genome in
+						genome directory</p>
+					<p>If you choose to download a new genome, click Import New
+						button and find out the new genome you need.</p>
+					<img src="/img/fig.2.2.png" alt="" height=340px width=380px />
+					<p class="imgname">Fig. 2.2 Select a new genome to download</p>
+					<p>After the download completes, the following dialog of
+						'Select Genome…' will pop up.</p>
+					<img src="/img/fig.2.3.png" alt="" height=350px width=400px />
+					<p class="imgname">Fig. 2.3 Select a new genome to import</p>
+					<p>It is noteworthy that it may take a little bit longer when
+						importing genome data into RED for the first time. We have a cache
+						mechanism to make it faster when you reload the same genome. Once
+						you have selected your genome and it has been loaded, you can move
+						on to the next step.</p>
+					<h4>2.1.2 Connecting to MySQL Database</h4>
+					<p>
+						A simple database connection dialog will pop up when you select <i>File
+							> Connect to MySQL…</i> as the following illustrated.
+					</p>
+					<img src="/img/fig.2.4.png" alt="" height=300px width=300px />
+					<p class="imgname">Fig. 2.4 Connect to MySQL DBMS</p>
+					<p>With successful connection, the program will detect whether
+						there is an database with imported data before and then make a
+						relevant notification for the next step.</p>
+					<ul>
+						<li>Null in Database</li>
+						<p>If the database is empty (or null), the program will tell
+							what you need to prepare for data import.</p>
+						<img src="/img/fig.2.5.png" alt="" height=399px width=498px />
+						<p class="imgname">Fig. 2.5 Data import notification</p>
+						<img src="/img/fig.2.6.png" alt="" height=300px width=600px />
+						<p class="imgname">Fig. 2.6 Data import dialog</p>
+						<p>A simple explanation for each kind of importing file was
+							shown. It helps you locate what kind of data file should be
+							imported when you select browse button.</p>
+						<img src="/img/fig.2.7.png" alt="" height=442px width=873px />
+						<p class="imgname">Fig. 2.7 Importing data</p>
+						<p>After all the paths have been selected, press Import button
+							and wait for a moment, all the data will be imported to your
+							database.</p>
+						<li>Data Which Don't Meet Your Demand in Database</li>
+						<p>
+							After database is connected using database connection panel, <i>Fig.
+								2.6</i> is present by selecting <i>File > Import Data >
+								Database…</i> and you can import another data for further demand.
+						</p>
+						<li>Data Which Meets Your Demand in Database</li>
+						<img src="/img/fig.2.8.png" alt="" height=300px width=300px />
+						<p class="imgname">Fig. 2.8 Notification of successful
+							database connection and data loaded to database</p>
+						<p>If data have been loaded into database system, then you can
+							filter spurisous variants for detecting potential RNA-editing
+							sites.</p>
+					</ul>
+					<h4>2.1.3 Loading a BAM/SAM File (using both RNA-Seq and
+						DNA-sequencing data; or only RNA-Seq data)</h4>
+					<p>In order to make a full landscape of all potential
+						RNA-editing sites at the genomic scale, the sequence alignment/map
+						file (BAM/SAM), as well as variant calling format file (VCF),
+						which has been imported to database, is needed. All potential
+						RNA-editing sites will be shown in Chromosome Panel. The program
+						only supports paired-end reads in the current release.</p>
+					<p>The SAM/BAM format has been well defined in 1.4Terminology
+						section. We provided an option dialog to help import BAM/SAM data
+						so you don't need to specify much information.</p>
+					<img src="/img/fig.2.9.png" alt="" height=280px width=300px />
+					<p class="imgname">Fig. 2.9 An option dialog for importing
+						BAM/SAM file</p>
+					<ul>
+						<li>Remove duplicate reads</li>
+						<p>Removing duplicate reads (reads of the same length and
+							sequence identity) is a widely used practice to correct bias when
+							analyzing NGS data. Tick if you want to remove. We strongly
+							recommend you remove them because it may influence the result of
+							coverage.</p>
+						<li>Minimal mapping quality</li>
+						<p>Control the minimum mapping quality when importing data.
+							You can choose to filter some reads in Chromosome Panel when
+							importing data based on their mapping quality scores. The quality
+							score ranges from 0 to 255 (with higher scores being better), and
+							if you set a filter value then only mapped reads with a score
+							above this value will be imported. Not all read mappers will
+							include a score value so depending on where the file you are
+							importing came from this option may have no effect.</p>
+					</ul>
+					<h4>2.1.4 Setting filters</h4>
+					<p>Eight kinds of filters have been provided in RED, see
+						Filters section for more detail. Before setting filters, database
+						must be connected successfully. An initial set of RNA-editing
+						sites(ProbeSet) will be present as a root tree named All Probes
+						within Directory Panel. When one filter is executed, a leaf
+						connected to this tree will be generated associated with the
+						remaining RNA-editing sites.</p>
+					<p>For the tested data, we have imported BJ22.RNA.chr8.snvs.vcf
+						and BJ22.RNA.chr8.snvs.bam file into database which has 9530
+						candidate RNA-editing sites.</p>
+					<img src="/img/fig.2.10.png" alt="" height=189px width=274px />
+					<p class="imgname">Fig. 2.10 RNA-seq data and potential RNA
+						editing sites within Directory Panel</p>
+					<p>Then we execute the Basic Filter with quality greater than
+						20 and coverage greater than 6.</p>
+					<img src="/img/fig.2.11.png" alt="" / height=250px width=400px>
+					<p class="imgname">Fig. 2.11 Basic Filter options</p>
+					<p>After filteration (for a few seconds), there is a subset of
+						editing sites remained and a leaf will be produced within
+						Directory Panel to describe and check what you have filtered out
+						as illustrated below. At the same time, the Genome Panel and
+						Chromosome Panel will present the RNA-editing sites by different
+						colours.</p>
+					<img src="/img/fig.2.12.png" alt="" height=120px width=276px />
+					<p class="imgname">Fig. 2.12 After executing basic filter, a
+						probe list is generated</p>
+					<h4>2.1.5 Reports</h4>
+					<p>For now, we only support exporting editing sites information
+						in text format. In the Directory Panel, right-click the probe list
+						which you want to export, and select Show Sites List, Show Sites
+						Distribution or Show Variant Distribution to make a report. Please
+						see Probe Set and Probe Lists section for more details.</p>
+					<h3 id="section2.2">2.2 Opening an Existing Project</h3>
+					<p>To open an existing project, select ‘File > Open Project’
+						from the main menu. All RED project files use a .red file
+						extension. A RED project stores all of the Data Set, Data Group,
+						Probe Set and Probe List information for your project. It also
+						remembers which data tracks were visible. See Saving a Project
+						section for more details.</p>
+					<p>Although it stores the name of the genome you were using, it
+						doesn't contain the actual genome data. If you are using RED on a
+						new machine, it will automatically download and install the
+						required genome when you open a project file. If you want to use
+						RED when not connected to a network, you need to ensure that the
+						correct genome has been installed locally. Once downloaded,
+						genomes will be cached on your machine for future use.</p>
+				</div>
+			</div>
+			<!-- 分栏 内容主体完 -->
+		</div>
+
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script
+		src="http://cdn.bootcss.com/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<!-- Analytics
 ================================================== -->
-    <script type="text/javascript">
-    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-  </body>
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://"
+				: " http://");
+		document
+				.write(unescape("%3Cscript src='"
+						+ _bdhmProtocol
+						+ "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
 </html>
