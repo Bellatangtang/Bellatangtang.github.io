@@ -80,7 +80,6 @@ img {
 			</div>
 		</div>
 
-
 		<!-- 分栏 -->
 		<div class="row">
 			<!-- 分栏 索引列表 -->
@@ -345,16 +344,16 @@ img {
 						in the local host, a warning notification will pop up as the
 						following illustrated and tell you what you should do.
 					</p>
-					<img src="/img/fig.2.1.png" alt="" height=148px width=762px>
+					<img src="img/fig.2.1.png" alt="" height=148px width=762px>
 					<p class="imgname">Fig. 2.1 Warning when there is no genome in
 						genome directory</p>
 					<p>If you choose to download a new genome, click Import New
 						button and find out the new genome you need.</p>
-					<img src="/img/fig.2.2.png" alt="" height=340px width=380px />
+					<img src="img/fig.2.2.png" alt="" height=340px width=380px />
 					<p class="imgname">Fig. 2.2 Select a new genome to download</p>
 					<p>After the download completes, the following dialog of
 						'Select Genome…' will pop up.</p>
-					<img src="/img/fig.2.3.png" alt="" height=350px width=400px />
+					<img src="img/fig.2.3.png" alt="" height=350px width=400px />
 					<p class="imgname">Fig. 2.3 Select a new genome to import</p>
 					<p>It is noteworthy that it may take a little bit longer when
 						importing genome data into RED for the first time. We have a cache
@@ -366,40 +365,45 @@ img {
 						A simple database connection dialog will pop up when you select <i>File
 							> Connect to MySQL…</i> as the following illustrated.
 					</p>
-					<img src="/img/fig.2.4.png" alt="" height=300px width=300px />
+					<img src="img/fig.2.4.png" alt="" height=300px width=300px />
 					<p class="imgname">Fig. 2.4 Connect to MySQL DBMS</p>
 					<p>With successful connection, the program will detect whether
 						there is an database with imported data before and then make a
 						relevant notification for the next step.</p>
 					<ul>
 						<li>Null in Database</li>
-						<p>If the database is empty (or null), the program will tell
-							what you need to prepare for data import.</p>
-						<img src="/img/fig.2.5.png" alt="" height=399px width=498px />
-						<p class="imgname">Fig. 2.5 Data import notification</p>
-						<img src="/img/fig.2.6.png" alt="" height=300px width=600px />
-						<p class="imgname">Fig. 2.6 Data import dialog</p>
-						<p>A simple explanation for each kind of importing file was
-							shown. It helps you locate what kind of data file should be
-							imported when you select browse button.</p>
-						<img src="/img/fig.2.7.png" alt="" height=442px width=873px />
-						<p class="imgname">Fig. 2.7 Importing data</p>
-						<p>After all the paths have been selected, press Import button
-							and wait for a moment, all the data will be imported to your
-							database.</p>
+					</ul>
+					<p>If the database is empty (or null), the program will tell
+						what you need to prepare for data import.</p>
+					<img src="img/fig.2.5.png" alt="" height=399px width=498px />
+					<p class="imgname">Fig. 2.5 Data import notification</p>
+					<img src="img/fig.2.6.png" alt="" height=300px width=600px />
+					<p class="imgname">Fig. 2.6 Data import dialog</p>
+					<p>A simple explanation for each kind of importing file was
+						shown. It helps you locate what kind of data file should be
+						imported when you select browse button.</p>
+					<img src="img/fig.2.7.png" alt="" height=442px width=873px />
+					<p class="imgname">Fig. 2.7 Importing data</p>
+					<p>After all the paths have been selected, press Import button
+						and wait for a moment, all the data will be imported to your
+						database.</p>
+					<ul>
 						<li>Data Which Don't Meet Your Demand in Database</li>
-						<p>
-							After database is connected using database connection panel, <i>Fig.
-								2.6</i> is present by selecting <i>File > Import Data >
-								Database…</i> and you can import another data for further demand.
-						</p>
+					</ul>
+					<p>
+						After database is connected using database connection panel, <i>Fig.
+							2.6</i> is present by selecting <i>File > Import Data > Database…</i>
+						and you can import another data for further demand.
+					</p>
+					<ul>
 						<li>Data Which Meets Your Demand in Database</li>
-						<img src="/img/fig.2.8.png" alt="" height=300px width=300px />
-						<p class="imgname">Fig. 2.8 Notification of successful
-							database connection and data loaded to database</p>
-						<p>If data have been loaded into database system, then you can
-							filter spurisous variants for detecting potential RNA-editing
-							sites.</p>
+					</ul>
+					<img src="img/fig.2.8.png" alt="" height=402px width=500px />
+					<p class="imgname">Fig. 2.8 Notification of successful database
+						connection and data loaded to database</p>
+					<p>If data have been loaded into database system, then you can
+						filter spurisous variants for detecting potential RNA-editing
+						sites.</p>
 					</ul>
 					<h4>2.1.3 Loading a BAM/SAM File (using both RNA-Seq and
 						DNA-sequencing data; or only RNA-Seq data)</h4>
@@ -412,7 +416,7 @@ img {
 					<p>The SAM/BAM format has been well defined in 1.4Terminology
 						section. We provided an option dialog to help import BAM/SAM data
 						so you don't need to specify much information.</p>
-					<img src="/img/fig.2.9.png" alt="" height=280px width=300px />
+					<img src="img/fig.2.9.png" alt="" height=400px width=400px />
 					<p class="imgname">Fig. 2.9 An option dialog for importing
 						BAM/SAM file</p>
 					<ul>
@@ -443,12 +447,12 @@ img {
 					<p>For the tested data, we have imported BJ22.RNA.chr8.snvs.vcf
 						and BJ22.RNA.chr8.snvs.bam file into database which has 9530
 						candidate RNA-editing sites.</p>
-					<img src="/img/fig.2.10.png" alt="" height=189px width=274px />
+					<img src="img/fig.2.10.png" alt="" height=189px width=274px />
 					<p class="imgname">Fig. 2.10 RNA-seq data and potential RNA
 						editing sites within Directory Panel</p>
 					<p>Then we execute the Basic Filter with quality greater than
 						20 and coverage greater than 6.</p>
-					<img src="/img/fig.2.11.png" alt="" / height=250px width=400px>
+					<img src="img/fig.2.11.png" alt="" / height=250px width=400px>
 					<p class="imgname">Fig. 2.11 Basic Filter options</p>
 					<p>After filteration (for a few seconds), there is a subset of
 						editing sites remained and a leaf will be produced within
@@ -456,7 +460,209 @@ img {
 						as illustrated below. At the same time, the Genome Panel and
 						Chromosome Panel will present the RNA-editing sites by different
 						colours.</p>
-					<img src="/img/fig.2.12.png" alt="" height=120px width=276px />
+					<img src="img/fig.2.12.png" alt="" height=194px width=276px />
+					<p class="imgname">Fig. 2.12 After executing basic filter, a
+						probe list is generated</p>
+					<h4>2.1.5 Reports</h4>
+					<p>For now, we only support exporting editing sites information
+						in text format. In the Directory Panel, right-click the probe list
+						which you want to export, and select Show Sites List, Show Sites
+						Distribution or Show Variant Distribution to make a report. Please
+						see Probe Set and Probe Lists section for more details.</p>
+					<h3 id="section2.2">2.2 Opening an Existing Project</h3>
+					<p>To open an existing project, select ‘File > Open Project’
+						from the main menu. All RED project files use a .red file
+						extension. A RED project stores all of the Data Set, Data Group,
+						Probe Set and Probe List information for your project. It also
+						remembers which data tracks were visible. See Saving a Project
+						section for more details.</p>
+					<p>Although it stores the name of the genome you were using, it
+						doesn't contain the actual genome data. If you are using RED on a
+						new machine, it will automatically download and install the
+						required genome when you open a project file. If you want to use
+						RED when not connected to a network, you need to ensure that the
+						correct genome has been installed locally. Once downloaded,
+						genomes will be cached on your machine for future use.</p>
+					<!-- 第三章 -->
+					<h1 id="chapter3" class="page-header">3 Visualisation</h1>
+					<p>The main window consists of Toolbar Panel, Directory Panel,
+						Genome Panel, Feature Panel, Chromosome Panel and Status-bar
+						Panel. Shown as following figure and table.</p>
+					<h3 id="section3.1">3.1 Main Window</h3>
+					<img src="img/fig.3.1.png" alt="" height=749px width=1331px>
+					<p class="imgname">Fig. 3.1 Main window</p>
+					<table border="1">
+						<tr>
+							<th>Panel</th>
+							<th>Explanation</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Toolbar Panel</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Directory Panel</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Genome Panel</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Feature Panel</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Chromosome Panel</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Status-bar Panel</td>
+						</tr>
+					</table>
+					<h3 id="section3.2">3.2 Toolbar Panel</h3>
+					<img src="img/fig.3.2.png" alt="" height=55px width=467px>
+					<p class="imgname">Fig. 3.2 Toolbar panel</p>
+					<p>The toolbar is a convenient way to access commonly used
+						functions, which you can also access via the main menu or keyboard
+						shortcuts.</p>
+					<ul><li><img src="img/fig.3.3.png" alt="" height=50px width=131px></li></ul>
+					<p>These buttons allow you to change the data tracks between showing just reads, just probes or both reads and probes</p>
+					<ul><li><img src="img/fig.3.4.png" alt="" height=49px width=45px></li></ul>
+					<p>This lets you change the data zoom level</p>
+					<ul><li><img src="img/fig.3.5.png" alt="" height=44px width=84px></li></ul>
+					<p>These buttons bring up either the Find Feature, or Goto Position search tools</p>
+					<ul><li><img src="img/fig.3.6.png" alt="" height=51px width=201px></li></ul>
+					<p>Drag the tag and change the data zoom level.</p>
+					<h3 id="section3.3">3.3	Directory Panel</h3>
+					<p>The directory panel gives you a quick overview of your Annotation sets, Data Sets, Data Groups, Probe Set and Probe Lists.</p>
+					
+					<h4>2.1.1 Select a Genome</h4>
+					<p>
+						To start a new project, you may first select a new genome of
+						interest. When the program is open, select <i>File > New
+							Project…</i> to select a new genome. If there isn't any genome file
+						in the local host, a warning notification will pop up as the
+						following illustrated and tell you what you should do.
+					</p>
+					<img src="img/fig.2.1.png" alt="" height=148px width=762px>
+					<p class="imgname">Fig. 2.1 Warning when there is no genome in
+						genome directory</p>
+					<p>If you choose to download a new genome, click Import New
+						button and find out the new genome you need.</p>
+					<img src="img/fig.2.2.png" alt="" height=340px width=380px />
+					<p class="imgname">Fig. 2.2 Select a new genome to download</p>
+					<p>After the download completes, the following dialog of
+						'Select Genome…' will pop up.</p>
+					<img src="img/fig.2.3.png" alt="" height=350px width=400px />
+					<p class="imgname">Fig. 2.3 Select a new genome to import</p>
+					<p>It is noteworthy that it may take a little bit longer when
+						importing genome data into RED for the first time. We have a cache
+						mechanism to make it faster when you reload the same genome. Once
+						you have selected your genome and it has been loaded, you can move
+						on to the next step.</p>
+					<h4>2.1.2 Connecting to MySQL Database</h4>
+					<p>
+						A simple database connection dialog will pop up when you select <i>File
+							> Connect to MySQL…</i> as the following illustrated.
+					</p>
+					<img src="img/fig.2.4.png" alt="" height=300px width=300px />
+					<p class="imgname">Fig. 2.4 Connect to MySQL DBMS</p>
+					<p>With successful connection, the program will detect whether
+						there is an database with imported data before and then make a
+						relevant notification for the next step.</p>
+					<ul>
+						<li>Null in Database</li>
+					</ul>
+					<p>If the database is empty (or null), the program will tell
+						what you need to prepare for data import.</p>
+					<img src="img/fig.2.5.png" alt="" height=399px width=498px />
+					<p class="imgname">Fig. 2.5 Data import notification</p>
+					<img src="img/fig.2.6.png" alt="" height=300px width=600px />
+					<p class="imgname">Fig. 2.6 Data import dialog</p>
+					<p>A simple explanation for each kind of importing file was
+						shown. It helps you locate what kind of data file should be
+						imported when you select browse button.</p>
+					<img src="img/fig.2.7.png" alt="" height=442px width=873px />
+					<p class="imgname">Fig. 2.7 Importing data</p>
+					<p>After all the paths have been selected, press Import button
+						and wait for a moment, all the data will be imported to your
+						database.</p>
+					<ul>
+						<li>Data Which Don't Meet Your Demand in Database</li>
+					</ul>
+					<p>
+						After database is connected using database connection panel, <i>Fig.
+							2.6</i> is present by selecting <i>File > Import Data > Database…</i>
+						and you can import another data for further demand.
+					</p>
+					<ul>
+						<li>Data Which Meets Your Demand in Database</li>
+					</ul>
+					<img src="img/fig.2.8.png" alt="" height=402px width=500px />
+					<p class="imgname">Fig. 2.8 Notification of successful database
+						connection and data loaded to database</p>
+					<p>If data have been loaded into database system, then you can
+						filter spurisous variants for detecting potential RNA-editing
+						sites.</p>
+					</ul>
+					<h4>2.1.3 Loading a BAM/SAM File (using both RNA-Seq and
+						DNA-sequencing data; or only RNA-Seq data)</h4>
+					<p>In order to make a full landscape of all potential
+						RNA-editing sites at the genomic scale, the sequence alignment/map
+						file (BAM/SAM), as well as variant calling format file (VCF),
+						which has been imported to database, is needed. All potential
+						RNA-editing sites will be shown in Chromosome Panel. The program
+						only supports paired-end reads in the current release.</p>
+					<p>The SAM/BAM format has been well defined in 1.4Terminology
+						section. We provided an option dialog to help import BAM/SAM data
+						so you don't need to specify much information.</p>
+					<img src="img/fig.2.9.png" alt="" height=400px width=400px />
+					<p class="imgname">Fig. 2.9 An option dialog for importing
+						BAM/SAM file</p>
+					<ul>
+						<li>Remove duplicate reads</li>
+						<p>Removing duplicate reads (reads of the same length and
+							sequence identity) is a widely used practice to correct bias when
+							analyzing NGS data. Tick if you want to remove. We strongly
+							recommend you remove them because it may influence the result of
+							coverage.</p>
+						<li>Minimal mapping quality</li>
+						<p>Control the minimum mapping quality when importing data.
+							You can choose to filter some reads in Chromosome Panel when
+							importing data based on their mapping quality scores. The quality
+							score ranges from 0 to 255 (with higher scores being better), and
+							if you set a filter value then only mapped reads with a score
+							above this value will be imported. Not all read mappers will
+							include a score value so depending on where the file you are
+							importing came from this option may have no effect.</p>
+					</ul>
+					<h4>2.1.4 Setting filters</h4>
+					<p>Eight kinds of filters have been provided in RED, see
+						Filters section for more detail. Before setting filters, database
+						must be connected successfully. An initial set of RNA-editing
+						sites(ProbeSet) will be present as a root tree named All Probes
+						within Directory Panel. When one filter is executed, a leaf
+						connected to this tree will be generated associated with the
+						remaining RNA-editing sites.</p>
+					<p>For the tested data, we have imported BJ22.RNA.chr8.snvs.vcf
+						and BJ22.RNA.chr8.snvs.bam file into database which has 9530
+						candidate RNA-editing sites.</p>
+					<img src="img/fig.2.10.png" alt="" height=189px width=274px />
+					<p class="imgname">Fig. 2.10 RNA-seq data and potential RNA
+						editing sites within Directory Panel</p>
+					<p>Then we execute the Basic Filter with quality greater than
+						20 and coverage greater than 6.</p>
+					<img src="img/fig.2.11.png" alt="" / height=250px width=400px>
+					<p class="imgname">Fig. 2.11 Basic Filter options</p>
+					<p>After filteration (for a few seconds), there is a subset of
+						editing sites remained and a leaf will be produced within
+						Directory Panel to describe and check what you have filtered out
+						as illustrated below. At the same time, the Genome Panel and
+						Chromosome Panel will present the RNA-editing sites by different
+						colours.</p>
+					<img src="img/fig.2.12.png" alt="" height=194px width=276px />
 					<p class="imgname">Fig. 2.12 After executing basic filter, a
 						probe list is generated</p>
 					<h4>2.1.5 Reports</h4>
@@ -492,8 +698,7 @@ img {
 	<script
 		src="http://cdn.bootcss.com/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-	<!-- Analytics
-================================================== -->
+	<!-- Analytics================================================== -->
 	<script type="text/javascript">
 		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://"
 				: " http://");
