@@ -276,24 +276,24 @@ img {
 						performs formal statistical tests to identify reliable RNA editing
 						sites. A potential RNA editing site can be visualized in the
 						context of reference genome (/gene).</p>
-					<img src="img/fig.1.1.png" alt="" height=480 width=722 />
+					<img src="img/fig.1.1.png" alt="" height=603 width=911 />
 					<p class="imgname">Fig. 1.1 A screen shot of RED</p>
 					<p>RED is a Java-based program with Graphic User Interface
 						(GUI), which works on mainstream operating systems (e.g., Windows,
 						Linux and Mac OS X). To make it more efficient, everlasting and
-						faster-saving, we use MySQL database managing system (DBMS) in
-						manuplicating huge NGS data. In addition. In addition, we used
-						functions in R (www.R-project.org) in performing statistical
+						faster-saving, we use MySQL database management system (DBMS) in
+						manuplicating huge NGS data. In addition, we use
+						functions in <em>R</em> to perform statistical
 						analysis. However, you'll never manipulate R and MySQL when you
-						used RED program. All of the operation relative to R and MySQL is
+						use RED. All of the operation relative to <em>R</em> and MySQL is
 						completed by RED automatically. RED enables the analysis of RNA
 						editing events at two levels (illustrated below) using VCF files
 						from different sources and the presentation of full mapped
-						sequence data using BAM file:</p>
+						sequence data using BAM/SAM file:</p>
 					<ul>
-						<li>Detection of RNA editing sites using RNA-seq data alone
-							(i.e., De Novo identification)</li>
-						<li>Detection of RNA editing events using both DNA-sequencing
+						<li>Detection of RNA editing events using RNA-seq data alone
+							(i.e., <em>De Novo</em> identification)</li>
+						<li>Detection of RNA editing events using both DNA-seq
 							data (e.g., whole exome sequencing) and RNA-Seq data</li>
 					</ul>
 					<h3 id="section1.2">1.2 Prerequisites</h3>
@@ -312,39 +312,36 @@ img {
 						Java Debugger) to create and compile programs. In order to run
 						RED, we need to install either JRE or JDK.</p>
 					<ul>
-						<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK</a>:</li>
+						<li>JDK:</li>
 						<p>
 							<a href="URI">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>
 						</p>
-						<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">JRE</a>:</li>
+						<li>JRE:</li>
 						<p>
 							<a href="URI">http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html</a>
 						</p>
 					</ul>
 					<h4>1.3.2 Install MySQL Database</h4>
-					<p>RED stores all data into database so that we can reuse the
+					<p>RED stores almost all data into database so that we can reuse the
 						data for research. MySQL is one of the best choice since it is
-						free and efficient. Although default configuration in MySQL can
-						ensure your server works well, you could edit the configure file
-						to gain better performance. For Linux System, edit the parameters
-						in the file of /etc/my.cnf (default configuration path). For
-						Windows System, you could use MySQL Workbench to configure your
-						server efficiently.</p>
+						free and efficient. Install MySQL database with the following download page.</p>
 					<ul>
-						<li><a href="http://dev.mysql.com/downloads/mysql/">MySQL</a>:</li>
+						<li>MySQL:</li>
 						<p>
 							<a href="URI">http://dev.mysql.com/downloads/mysql/</a>
 						</p>
 					</ul>
-					<h4>
-						1.3.3 Install <i>R</i> Environment
+					<p>Although default configuration in MySQL can ensure your server works well, you could edit the configure file to gain better performance. For Linux System, edit the parameters in the file of /etc/my.cnf (default configuration path). For Windows System, you could use <a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a> to configure your server efficiently.</p>
+					
+					<h4>1.3.3 Install <i>R</i> Environment
 					</h4>
 
-					<p>R is a free software environment for statistical computing
+					<p><em>R</em> is a free software environment for statistical computing
 						and graphics. It compiles and runs on a wide variety of UNIX
-						platforms, Windows and MacOS. To download R, please choose your
-						preferred CRAN mirror. The package of “rJava” in R is required,
-						which ensures connection between R and Java. Open a R Window and
+						platforms, Windows and MacOS. To download <em>R</em>, please choose your
+						preferred <a href="http://cran.r-project.org/mirrors.html">CRAN mirror</a>. </p>
+					<p>The package of “rJava” in <em>R</em> is required,
+						which ensures connection between <em>R</em> and Java. Open a <em>R</em> Window and
 						type:</p>
 					<p>
 						<code>
@@ -354,37 +351,36 @@ img {
 					<p>The package will be installed automatically with Internet
 						connection.</p>
 					<ul>
-						<li><a href="http://www.r-project.org/">R</a>:</li>
+						<li><em>R</em>:</li>
 						<p>
 							<a href="URI">http://www.r-project.org/</a>
 						</p>
 					</ul>
 					<h3 id="section1.4">1.4 Terminology</h3>
-					<p>There are a few terms used throughout the RED documentation
-						which it is useful to understand before using the program.</p>
+					<p>Several terms are used throughout the RED documentation and program. To make it more easier to be understood, we have a simple introduction.</p>
 					<h4>1.4.1 Molecular Biology</h4>
 					<ul>
-						<li>RNA Editing</li>
+						<li><strong>RNA Editing</strong></li>
 					</ul>
 					<p>RNA editing is one of the post- or co-transcriptional
 						processes with modification of RNA nucleotides from their
 						genome-encoded sequence.</p>
 					<ul>
-						<li>Reference Genome</li>
+						<li><strong>Reference Genome</strong></li>
 					</ul>
 					<p>Reference genome is a comprehensive, integrated,
 						non-redundant, well-annotated set of reference sequences including
 						genomic, transcript, and protein (hg19).</p>
 					<ul>
-						<li>Sequence Alignment Map (<i>.bam/.sam</i>) File
-						</li>
+						<li><strong>Sequence Alignment Map (<i>.bam/.sam</i>) File
+						</strong></li>
 					</ul>
 					<p>SAM format is a text format for storing sequence data in a
 						series of tab delimited ASCII columns, while BAM format stores the
 						same data in a compressed, indexed, binary form.</p>
 					<ul>
-						<li>Variant Calling Format (<i>.vcf</i>) File
-						</li>
+						<li><strong>Variant Calling Format (<i>.vcf</i>) File
+						</strong></li>
 					</ul>
 					<p>VCF is a text file format (most likely stored in a
 						compressed manner) which contains meta-information lines, a header
@@ -393,7 +389,7 @@ img {
 
 					<h4>1.4.2 Program</h4>
 					<ul>
-						<li>Data Set</li>
+						<li><strong>Data Set</strong></li>
 					</ul>
 					<p>A data set stores a set of data, which is imported from a
 						single file. It is an efficient way to be handled and presented.
@@ -401,7 +397,7 @@ img {
 						sequence alignment/map information, which is displayed in the
 						context of reference sequence.</p>
 					<ul>
-						<li>Data Group</li>
+						<li><strong>Data Group</strong></li>
 					</ul>
 					<p>A data group contains two or more data sets with different
 						biological conditions to make it compared for some purposes (e.g.,
@@ -411,21 +407,21 @@ img {
 						function has not completely worked , and we will try our best to
 						make it come true in the next version.</p>
 					<ul>
-						<li>Data Store</li>
+						<li><strong>Data Store</strong></li>
 					</ul>
 					<p>A data store refers to either a data set or a data group.
 						Most analyses and visualizations in RED operate on data stores and
 						they work equally well with either data sets or data groups.</p>
 					<ul>
-						<li>Probe/ProbeBean</li>
+						<li><strong>Probe/ProbeBean</strong></li>
 					</ul>
 					<p>
 						A probe represents a potential RNA-editing site which contains
-						basic information (e.g., coordinate, and editing base), while a
+						basic information (e.g., coordinate, reference base and editing base), while a
 						probe bean contains all information derived from <i>.vcf</i> file.
 					</p>
 					<ul>
-						<li>Probe Set</li>
+						<li><strong>Probe Set</strong></li>
 					</ul>
 					<p>A probe set stores all probes from an initial vcf file,
 						namely stores all RNA-editing sites without using any filter. It
@@ -433,7 +429,7 @@ img {
 						the original probe set. The probe set is produced when a vcf file
 						has been input into database.</p>
 					<ul>
-						<li>Probe List</li>
+						<li><strong>Probe List</strong></li>
 					</ul>
 					<p>A probe list is a subset of the probe set. Probe lists are
 						generated by one or more filters implemented in RED, which store
@@ -444,15 +440,14 @@ img {
 					<h1 id="chapter2" class="page-header">2 Getting Started</h1>
 					<h3 id="section2.1">2.1 Starting a New Project</h3>
 					<p>Before starting a new project, make sure that you have
-						configured all running environments mentioned in the Prerequisites
-						section. You can either select a genome or connect to MySQL
+						configured all running environments mentioned in the <a href="section1.2">Prerequisites</a> section. You can either select a genome or connect to MySQL
 						database when starting a new project, but both should be performed
 						to make the program work properly.</p>
 					<h4>2.1.1 Select a Genome</h4>
 					<p>
 						To start a new project, you may first select a new genome of
-						interest. When the program is open, select <i>File &gt; New
-							Project…</i> to select a new genome. If there isn't any genome file
+						interest. When the program is open, select <em>File &gt; New
+							Project…</em> to select a new genome. If there isn't any genome file
 						in the local host, a warning notification will pop up as the
 						following illustrated and tell you what you should do.
 					</p>
@@ -464,7 +459,7 @@ img {
 					<img src="img/fig.2.2.png" alt="" height=340px width=380px />
 					<p class="imgname">Fig. 2.2 Select a new genome to download</p>
 					<p>After the download completes, the following dialog of
-						'Select Genome…' will pop up.</p>
+						<em>Select Genome…</em> will pop up.</p>
 					<img src="img/fig.2.3.png" alt="" height=335 width=383 />
 					<p class="imgname">Fig. 2.3 Select a new genome to import</p>
 					<p>It is noteworthy that it may take a little bit longer when
@@ -474,8 +469,8 @@ img {
 						on to the next step.</p>
 					<h4>2.1.2 Connecting to MySQL Database</h4>
 					<p>
-						A simple database connection dialog will pop up when you select <i>File
-							&gt; Connect to MySQL…</i> as the following illustrated.
+						A simple database connection dialog will pop up when you select <em>File
+						  &gt; Connect to MySQL…</em> as following illustrated.
 					</p>
 					<img src="img/fig.2.4.png" alt="" height=300px width=300px />
 					<p class="imgname">Fig. 2.4 Connect to MySQL DBMS</p>
@@ -483,32 +478,30 @@ img {
 						there is an database with imported data before and then make a
 						relevant notification for the next step.</p>
 					<ul>
-						<li>Null in Database</li>
+						<li><strong>Null in Database</strong></li>
 					</ul>
 					<p>If the database is empty (or null), the program will tell
 						what you need to prepare for data import.</p>
 					<img src="img/fig.2.5.png" alt="" height=399px width=498px />
 					<p class="imgname">Fig. 2.5 Data import notification</p>
-					<img src="img/fig.2.6.png" alt="" height=300px width=600px />
+					<img src="img/fig.2.6.png" alt="" name="fig_2_6" width=600px height=300px id="fig_2_6" />
 					<p class="imgname">Fig. 2.6 Data import dialog</p>
 					<p>A simple explanation for each kind of importing file was
 						shown. It helps you locate what kind of data file should be
 						imported when you select browse button.</p>
-					<img src="img/fig.2.7.png" alt="" height=331 width=655 />
+					<img src="img/fig.2.7.png" alt="" height=299 width=595 />
 					<p class="imgname">Fig. 2.7 Importing data</p>
-					<p>After all the paths have been selected, press Import button
-						and wait for a moment, all the data will be imported to your
-						database.</p>
+					<p>After selecting all paths, press <em>Import</em> button and wait for a moment, all data will be imported to database.</p>
 					<ul>
-						<li>Data Which Don't Meet Your Demand in Database</li>
-					</ul>
+					  <li><strong>Data Which Don't Meet Your Demand in Database</strong></li>
+				  </ul>
 					<p>
-						After database is connected using database connection panel, <i>Fig.
-							2.6</i> is present by selecting <i>File &gt; Import Data &gt;
-							Database…</i> and you can import another data for further demand.
+						After database is connected using database connection panel, <i><a href="#fig_2_6">Fig.
+							2.6</a></i> is present by selecting <em>File &gt; Import Data &gt;
+					  Database…</em> and you can import another data for further demand.
 					</p>
 					<ul>
-						<li>Data Which Meets Your Demand in Database</li>
+						<li><strong>Data Which Meets Your Demand in Database</strong></li>
 					</ul>
 					<img src="img/fig.2.8.png" alt="" height=402px width=500px />
 					<p class="imgname">Fig. 2.8 Notification of successful database
@@ -522,16 +515,15 @@ img {
 						RNA-editing sites at the genomic scale, the sequence alignment/map
 						file (BAM/SAM), as well as variant calling format file (VCF),
 						which has been imported to database, is needed. All potential
-						RNA-editing sites will be shown in Chromosome Panel. The program
+						RNA-editing sites will be shown in <a href="#section3.5"><em>Chromosome Panel</em></a>. The program
 						only supports paired-end reads in the current release.</p>
-					<p>The SAM/BAM format has been well defined in 1.4Terminology
-						section. We provided an option dialog to help import BAM/SAM data
+					<p>The SAM/BAM format has been well defined in <a href="#section1.4"><em>Terminology</em></a> section. We provided an option dialog to help import BAM/SAM data
 						so you don't need to specify much information.</p>
 					<img src="img/fig.2.9.png" alt="" height=400px width=400px />
 					<p class="imgname">Fig. 2.9 An option dialog for importing
 						BAM/SAM file</p>
 					<ul>
-						<li>Remove duplicate reads</li>
+						<li><strong>Remove duplicate reads</strong></li>
 					</ul>
 					<p>Removing duplicate reads (reads of the same length and
 						sequence identity) is a widely used practice to correct bias when
@@ -539,10 +531,10 @@ img {
 						recommend you remove them because it may influence the result of
 						coverage.</p>
 					<ul>
-						<li>Minimal mapping quality</li>
+						<li><strong>Minimal mapping quality</strong></li>
 					</ul>
 					<p>Control the minimum mapping quality when importing data. You
-						can choose to filter some reads in Chromosome Panel when importing
+						can choose to filter some reads in <a href="#section3.5"><em>Chromosome Panel</em></a> when importing
 						data based on their mapping quality scores. The quality score
 						ranges from 0 to 255 (with higher scores being better), and if you
 						set a filter value then only mapped reads with a score above this
@@ -552,10 +544,10 @@ img {
 
 					<h4>2.1.4 Setting filters</h4>
 					<p>Eight kinds of filters have been provided in RED, see
-						Filters section for more detail. Before setting filters, database
+						<a href="#chapter4"><em>Filters</em></a> section for more detail. Before setting filters, database
 						must be connected successfully. An initial set of RNA-editing
-						sites(ProbeSet) will be present as a root tree named All Probes
-						within Directory Panel. When one filter is executed, a leaf
+						sites (ProbeSet) will be present as a root tree named All Probes
+						within <a href="#section3.3"><em>Directory Panel</em></a>. When one filter is executed, a leaf
 						connected to this tree will be generated associated with the
 						remaining RNA-editing sites.</p>
 					<p>For the tested data, we have imported BJ22.RNA.chr8.snvs.vcf
@@ -564,7 +556,7 @@ img {
 					<img src="img/fig.2.10.png" alt="" height=189px width=274px />
 					<p class="imgname">Fig. 2.10 RNA-seq data and potential RNA
 						editing sites within Directory Panel</p>
-					<p>Then we execute the Basic Filter with quality greater than
+					<p>Then we execute the <em><a href="#section4.2.2">Basic Filter</a></em> with quality greater than
 						20 and coverage greater than 6.</p>
 					<img src="img/fig.2.11.png" alt="" height=250px width=400px />
 					<p class="imgname">Fig. 2.11 Basic Filter options</p>
@@ -1021,7 +1013,7 @@ img {
                   <h3 id="section4.2">4.2	<em>Denovo</em> Mode</h3>
                   <h4>4.2.1	Input Data</h4>
                   <p>A variant calling format (VCF) file from RNA-seq is necessary. There is no a standard protocol to call sequence variant from RNA-Seq data, although a highly accurate approach termed SNPiR has been presented to identify SNPs in RNA-seq data {Piskol:2013fn} Usually, it takes a few minutes to load bam file, while DNA sequencing data may take more time. We strongly recommend users follow regular format, some weird vcf file can&rsquo;t be resolved correctly. If your vcf file contains more than one sample, please make an annotation before the process. </p>
-                  <h4>4.2.2	Basic Filter</h4>
+                  <h4 id="section4.2.2">4.2.2	Basic Filter</h4>
                   <p>First, you have to nominate target editing type that you want to study in  . Usually, A-G is recommended.  </p>
                   <p>Second, site quality and the depth of coverage of site were two key measures to be set up. You can select an upper and a lower limit for the range of values you want to include. If you leave the lower value blank then anything under the upper cutoff will pass. If you leave the upper value blank then anything above the lower cutoff will pass. 	</p>
                   <ul>
